@@ -15,4 +15,4 @@ jobs:
       - uses: cncf/landscape2-validate-action@v2
         with:
           target_kind: settings
-          target_path: ./sustainability/zats-sustainability.yml
+          target_path: ./sustainability/settings.yml

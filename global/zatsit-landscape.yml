@@ -1,0 +1,1942 @@
+landscape:
+  - category:
+    name: Provisioning
+    subcategories:
+      - subcategory:
+        name: Automation & Configuration
+        items:
+          - item:
+            name: Ansible
+            project: loved
+            homepage_url: https://www.ansible.com/
+            repo_url: https://github.com/ansible/ansible
+            logo: ansible.svg
+            twitter: https://twitter.com/ansible
+            crunchbase: https://www.crunchbase.com/organization/red-hat
+          - item:
+            name: AWS CloudFormation
+            description:
+              AWS CloudFormation provides a common language for you to describe
+              and provision all the infrastructure resources in your cloud environment.
+            homepage_url: https://aws.amazon.com/cloudformation/
+            logo: aws-cloudformation.svg
+            twitter: https://twitter.com/awscloudformer
+            crunchbase: https://www.crunchbase.com/organization/amazon-web-services
+          - item:
+            name: Chef Infra
+            homepage_url: https://www.chef.io/
+            repo_url: https://github.com/chef/chef
+            logo: chef_infra.svg
+            crunchbase: https://www.crunchbase.com/organization/chef
+          - item:
+            name: OpenStack
+            homepage_url: https://www.openstack.org/
+            repo_url: https://github.com/openstack/openstack
+            url_for_bestpractices: https://github.com/openstack
+            logo: open-stack.svg
+            crunchbase: https://www.crunchbase.com/organization/open-infrastructure-foundation
+          - item:
+            name: Pulumi
+            homepage_url: https://www.pulumi.com/
+            repo_url: https://github.com/pulumi/pulumi
+            logo: pulumi.svg
+            twitter: https://twitter.com/PulumiCorp
+            crunchbase: https://www.crunchbase.com/organization/pulumi-corporation
+          - item:
+            name: Puppet
+            homepage_url: https://puppet.com/
+            repo_url: https://github.com/puppetlabs/puppet
+            logo: puppet.svg
+            crunchbase: https://www.crunchbase.com/organization/puppet-labs
+          - item:
+            name: Rundeck
+            homepage_url: https://www.rundeck.com/open-source
+            repo_url: https://github.com/rundeck/rundeck
+            logo: rundeck.svg
+            crunchbase: https://www.crunchbase.com/organization/rundeck
+          - item:
+            name: Terraform
+            project: loved
+            homepage_url: https://www.terraform.io/
+            repo_url: https://github.com/hashicorp/terraform
+            logo: terraform.svg
+            crunchbase: https://www.crunchbase.com/organization/hashicorp
+      - subcategory:
+        name: Container Registry
+        items:
+          - item:
+            name: Amazon Elastic Container Registry (ECR)
+            description:
+              Amazon Elastic Container Registry (ECR) is a fully-managed Docker
+              container registry that makes it easy for developers to store, manage, and
+              deploy Docker container images.
+            homepage_url: https://aws.amazon.com/ecr/
+            logo: amazon-ecr.svg
+            crunchbase: https://www.crunchbase.com/organization/amazon-web-services
+          - item:
+            name: Azure Registry
+            description:
+              Azure Container Registry allows you to store images for all types
+              of container deployments including DC/OS, Docker Swarm, Kubernetes, and Azure
+              services such as App Service, Batch, Service Fabric, and others.
+            homepage_url: https://azure.microsoft.com/en-us/services/container-registry/
+            logo: azure-registry.svg
+            twitter: https://twitter.com/azure
+            crunchbase: https://www.crunchbase.com/organization/microsoft
+          - item:
+            name: Google Container Registry
+            description:
+              Container Registry is a single place for your team to manage Docker
+              images, perform vulnerability analysis, and decide who can access what with
+              fine-grained access control.
+            homepage_url: https://cloud.google.com/container-registry/
+            logo: google-container-registry.svg
+            twitter: https://twitter.com/GCPcloud
+            crunchbase: https://www.crunchbase.com/organization/google
+          - item:
+            name: JFrog Artifactory
+            description:
+              Shipping updates continuously and automatically has become a critical
+              element of any successful operation. JFrog is revolutionizing the software
+              world with the practice of Continuous Update, with a speed and continuity
+              that forever changes the way organizations manage and release software.
+            homepage_url: https://jfrog.com/artifactory/
+            logo: j-frog-artifactory.svg
+            crunchbase: https://www.crunchbase.com/organization/jfrog-ltd
+      - subcategory:
+        name: Security & Compliance
+        items:
+          - item:
+            name: Falco
+            homepage_url: https://falco.org/
+            project: incubating
+            repo_url: https://github.com/falcosecurity/falco
+            logo: falco.svg
+            twitter: https://twitter.com/falco_org
+            crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            extra:
+              accepted: "2018-10-10"
+              incubating: "2020-01-08"
+              dev_stats_url: https://falco.devstats.cncf.io/
+              artwork_url: https://github.com/cncf/artwork/blob/master/examples/incubating.md#falco-logos
+              slack_url: https://kubernetes.slack.com/messages/falco
+              summary_personas:
+                SREs, Cloud Architects, Platform Engineers, DevOps Engineer,
+                DevOps practitioners, DevSecOps practitioners
+              summary_tags:
+                Security, Go, C++, DevOps, DevSecOps, Container, Cloud native,
+                Kubernetes, Runtime, Threat detection, Syscalls, Monitoring, Observability,
+                Anomaly detection, Kubernetes
+              summary_use_case:
+                Falco is a cloud-native runtime security project that makes
+                it easy to consume kernel events. Falco enriches these events with additional
+                information from the Kubernetes platform and ecosystem as well as the rest
+                of the cloud native stack. Falco can also be extended to other data sources
+                through the use of plugins. Falco offers a rich set of security rules designed
+                for Kubernetes, Linux, and cloud native environments. When a rule is violated
+                in the system, Falco alerts users with details about the violation and severity.
+              summary_business_use_case:
+                "You can think about Falco as a security camera
+                for containers, Kubernetes and the cloud: it collects signals from hosts,
+                containers, orchestrators and cloud logs, and it reports suspicious or anomalous
+                behavior. Falco provides kernel instrumentation mechanisms to detect security
+                events. It then enriches them with metadata pulled from the node, the container
+                runtime and Kubernetes. This metadata is then used to dynamically apply
+                Falco rules based on the container name, image, orchestrator labels, orchestrator
+                resource type, etc."
+              summary_release_rate: 3 times per year (end of Jan, June, Sept)
+              summary_integrations:
+                Kubernetes Audit Logs, AWS Cloudtrail, GitHub Audit
+                Events, and the 40+ outputs supported by Falcosidekick (e.g. Slack, AWS
+                Lambda, etc)
+              summary_intro_url: null
+              clomonitor_name: falco
+              audits:
+                - date: "2019-06-07"
+                  type: security
+                  url: https://github.com/falcosecurity/falco/blob/master/audits/SECURITY_AUDIT_2019_07.pdf
+                  vendor: Cure53
+                - date: "2023-03-22"
+                  type: security
+                  url: https://falco.org/blog/falco-security-audit-2023/
+                  vendor: OSTIF
+          - item:
+            name: Keycloak
+            description:
+              Keycloak is an open-source identity and access management solution
+              for modern applications and services,  built on top of industry security standard
+              protocols.
+            homepage_url: https://www.keycloak.org/
+            project: loved
+            repo_url: https://github.com/keycloak/keycloak
+            logo: keycloak.svg
+            twitter: https://twitter.com/keycloak
+            crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            extra:
+              accepted: "2023-04-10"
+              incubating: "2023-04-10"
+              dev_stats_url: https://keycloak.devstats.cncf.io/
+              artwork_url: https://github.com/keycloak/keycloak-misc/blob/main/logo/logo-key.svg
+              mailing_list_url: https://groups.google.com/forum/#!forum/keycloak-user
+              summary_personas: SREs,Cloud Architects,Platform Engineers,Security Engineers,Developers,Architects
+              summary_tags: Java,Security,Container,Cloud Native,Kubernetes,SSO,Identity,Federation,Authentication,Authorization
+              summary_use_case: |-
+                Keycloak is zatist's preferred choice for securing web applications. With 7 years of experience on the solution, we have already covered numerous business cases in the field of insurance, e-commerce, and the construction sector. Ludovic Dussart is the zatsit referent for the solution and can offer training and implementation studies.
+              summary_business_use_case: |-
+                Keycloak provides built-in cloud-native identity and access control standards. By delegating the security aspects of an application to Keycloak,  developers don't need to worry about different authentication mechanisms, understand about cryptography, or how to safely store passwords.
+                Developers can take advantage of modern authentication and authorization protocols like OAuth2, OpenID Connect, WebAuthn, SAML2 based IDPs, LDAP servers, Kerberos/SPNEGO.
+                Keycloak enables infrastructure teams and cloud-native developers to secure their cloud-native stack technologies through consolidated security standards, to provide to users a cloud-friendly experience with a strong focus on usability, scalability, and security.
+              summary_release_rate: 4 times per year
+              summary_integrations:
+                OAuth2, OIDC, SAML2 based IdPs, LDAP servers, Kerberos/SPNEGO,
+                custom user storage solutions
+              summary_intro_url: null
+              clomonitor_name: keycloak
+          - item:
+            name: Open Policy Agent (OPA)
+            homepage_url: https://www.openpolicyagent.org/
+            project: graduated
+            repo_url: https://github.com/open-policy-agent/opa
+            logo: opa.svg
+            twitter: https://twitter.com/openpolicyagent
+            crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            allow_duplicate_repo: true
+            extra:
+              accepted: "2018-03-29"
+              incubating: "2019-04-02"
+              graduated: "2021-01-29"
+              cncf_tags:
+                - https://github.com/cncf/tag-security
+              dev_stats_url: https://opa.devstats.cncf.io/
+              artwork_url: https://github.com/cncf/artwork/blob/master/examples/incubating.md#opa-logos
+              blog_url: https://blog.openpolicyagent.org/
+              slack_url: http://slack.openpolicyagent.org/
+              clomonitor_name: opa
+              audits:
+                - date: "2018-08-30"
+                  type: security
+                  url: https://cure53.de/pentest-report_opa.pdf
+                  vendor: Cure53
+          - item:
+            name: Snyk
+            homepage_url: https://snyk.io/
+            logo: snyk.svg
+            crunchbase: https://www.crunchbase.com/organization/snyk
+          - item:
+            name: Sonatype Nexus
+            homepage_url: https://www.sonatype.com/
+            logo: sonatype.svg
+            twitter: https://twitter.com/sonatype
+            crunchbase: https://www.crunchbase.com/organization/sonatype
+          - item:
+            name: Trivy
+            homepage_url: https://github.com/aquasecurity/trivy
+            repo_url: https://github.com/aquasecurity/trivy
+            logo: trivy.svg
+            crunchbase: https://www.crunchbase.com/organization/aquasecurity
+      - subcategory:
+        name: Key Management
+        items:
+          - item:
+            name: ORY Hydra
+            homepage_url: https://www.ory.sh/
+            repo_url: https://github.com/ory/hydra
+            logo: ory-hydra.svg
+            crunchbase: https://www.crunchbase.com/organization/ory
+          - item:
+            name: Vault
+            homepage_url: https://www.vaultproject.io/
+            repo_url: https://github.com/hashicorp/vault
+            logo: vault.svg
+            crunchbase: https://www.crunchbase.com/organization/hashicorp
+  - category:
+    name: Runtime
+    subcategories:
+      - subcategory:
+        name: Cloud Native Storage
+        items:
+          - item:
+            name: MinIO
+            homepage_url: https://min.io/
+            repo_url: https://github.com/minio/minio
+            logo: min-io.svg
+            crunchbase: https://www.crunchbase.com/organization/minio-inc
+          - item:
+            name: Nutanix Objects
+            homepage_url: https://www.nutanix.com/products/objects
+            logo: nutanix.svg
+            crunchbase: https://www.crunchbase.com/organization/nutanix
+      - subcategory:
+        name: Container Runtime
+        items:
+          - item:
+            name: containerd
+            homepage_url: https://containerd.io/
+            project: loved
+            repo_url: https://github.com/containerd/containerd
+            logo: containerd.svg
+            twitter: https://twitter.com/containerd
+            crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            allow_duplicate_repo: true
+            extra:
+              accepted: '2017-03-29'
+              incubating: '2017-03-29'
+              graduated: '2019-02-28'
+              cncf_tags:
+                - https://github.com/cncf/tag-runtime
+              dev_stats_url: https://containerd.devstats.cncf.io/
+              artwork_url: https://github.com/cncf/artwork/blob/master/examples/graduated.md#containerd-logos
+              stack_overflow_url: https://stackoverflow.com/questions/tagged/containerd
+              slack_url: https://slack.cncf.io/
+              chat_channel: '#containerd'
+              clomonitor_name: containerd
+              audits:
+                - date: '2023-03-02'
+                  type: fuzzing
+                  url: https://github.com/containerd/containerd.io/blob/main/static/img/ADA-fuzzing-audit-21-22.pdf
+                  vendor: Ada Logics
+          - item:
+            name: CRI-O
+            homepage_url: https://cri-o.io/
+            project: graduated
+            repo_url: https://github.com/cri-o/cri-o
+            logo: cri-o.svg
+            crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            allow_duplicate_repo: true
+            extra:
+              accepted: "2019-04-08"
+              incubating: "2019-04-08"
+              graduated: "2023-07-19"
+              cncf_tags:
+                - https://github.com/cncf/tag-runtime
+              dev_stats_url: https://crio.devstats.cncf.io/
+              artwork_url: https://github.com/cncf/artwork/blob/master/examples/incubating.md#cri-o-logos
+              stack_overflow_url: https://stackoverflow.com/questions/tagged/cri-o
+              blog_url: https://medium.com/cri-o
+              slack_url: https://kubernetes.slack.com/messages/CAZH62UR1
+              clomonitor_name: cri-o
+              audits:
+                - date: "2022-06-06"
+                  type: security
+                  url: https://github.com/cri-o/cri-o/blob/main/security/2022_security_audit_adalogics.pdf
+                  vendor: ADA Logics
+              summary_personas: Cluster Admins, SRE, Platform Architect
+              summary_tags: Container, Image, OCI, CRI, Runtime
+              summary_use_case: |
+                CRI-O is a secure, performant, and stable Container Runtime Interface (CRI) implementation for the Kubelet to orchestrate Open Container Initiative (OCI) containers in production Kubernetes environments. CRI-O's scope is only targeted at Kubernetes, and thus can be performance optimized, rigorously tested and securely tuned for running containers, pods and images in Kubernetes clusters.
+              summary_business_use_case: |
+                CRI-O  is able to tune its behavior to that of the Kubelet, enabling features and performance gains through customization. It is tested against a suite of thousands of tests, including the suite of Kubernetes e2e tests, to ensure compatibility with Kubernetes workloads. It has long had security on the forefront of its design philosophy, enabling new security knobs and reducing the attack surface for the purposes of running containers in production.
+              summary_release_rate: |
+                Every 4 months, released in tandem with Kubernetes minor releases (CRI-O 1.x.y is released soon after Kubernetes 1.x.z).
+              summary_integrations:
+                Kubernetes, runc, crun, youki, Kata containers, CNI,
+                Open Telemetry, Prometheus, sigstore, gRPC
+              summary_intro_url: https://github.com/cri-o/cri-o/blob/main/awesome.md
+      - subcategory:
+        name: Cloud Native Network
+        items:
+          - item:
+            name: Cilium
+            homepage_url: https://cilium.io/
+            project: graduated
+            repo_url: https://github.com/cilium/cilium
+            url_for_bestpractices: https://bestpractices.coreinfrastructure.org/en/projects/1269
+            logo: cilium.svg
+            twitter: https://twitter.com/ciliumproject
+            crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            extra:
+              accepted: "2021-10-13"
+              incubating: "2021-10-13"
+              graduated: "2023-10-11"
+              dev_stats_url: https://cilium.devstats.cncf.io/
+              artwork_url: https://github.com/cncf/artwork/blob/master/examples/incubating.md#cilium-logos
+              stack_overflow_url: https://stackoverflow.com/questions/tagged/cilium
+              slack_url: https://cilium.herokuapp.com/
+              summary_personas:
+                Platform engineers, Network teams, SRE, DevOps Engineers,
+                Security teams
+              summary_tags:
+                CNI, Networking, Load Balancing, Service Mesh, Observability,
+                Runtime Security, eBPF, Cluster Mesh, Multicloud
+              summary_use_case: |-
+                Cilium is a networking, observability, and security platform based on eBPF. As a CNI, it provides a flat Layer 3 network, even across clusters. Cilium enforces network policies on L3-L7 using an identity based security model.
+
+                Cilium implements distributed load balancing between pods and to external services by replacing kube-proxy. It also has advanced functionality like ingress and egress gateway, bandwidth management, service mesh, and deep network and security observability through Hubble and Tetragon.
+              summary_business_use_case:
+                Cilium reduces the operational complexity and cost
+                of running highly scalable and dynamic cloud native environments. By leveraging
+                eBPF, Cilium accelerates and simplifies service connectivity, makes systems
+                observable for easier monitoring and debugging, and provides deep security
+                observability and runtime enforcement.
+              summary_release_rate:
+                2-3 major releases a year, plus minor and point releases
+                for bug fixes and security updates
+              summary_integration:
+                Kubernetes, Prometheus, OpenTelemetry, Envoy, Istio,
+                Grafana, cert-manager, SPIFFE
+              summary_intro_url:
+              clomonitor_name: cilium
+              audits:
+                - date: "2023-02-13"
+                  type: security
+                  url: https://github.com/cilium/cilium.io/blob/main/Security-Reports/CiliumSecurityAudit2022.pdf
+                  vendor: Ada Logics
+                - date: "2023-02-13"
+                  type: fuzzing
+                  url: https://github.com/cilium/cilium.io/blob/main/Security-Reports/CiliumFuzzingAudit2022.pdf
+                  vendor: Ada Logics
+          - item:
+            name: Project Calico
+            homepage_url: https://www.tigera.io/project-calico
+            repo_url: https://github.com/projectcalico/calico
+            logo: project-calico.svg
+            twitter: https://twitter.com/projectcalico
+            crunchbase: https://www.crunchbase.com/organization/tigera
+  - category:
+    name: Orchestration & Management
+    subcategories:
+      - subcategory:
+        name: Scheduling & Orchestration
+        items:
+          - item:
+            name: Amazon Elastic Container Service (ECS)
+            description:
+              Amazon Elastic Container Service (Amazon ECS) is a highly scalable,
+              high-performance container orchestration service that supports Docker containers
+              and allows you to easily run and scale containerized applications on AWS.
+            homepage_url: https://aws.amazon.com/ecs/
+            logo: amazon-ecs.svg
+            crunchbase: https://www.crunchbase.com/organization/amazon-web-services
+          - item:
+            name: Crossplane
+            homepage_url: https://crossplane.io/
+            project: incubating
+            repo_url: https://github.com/crossplane/crossplane
+            project_org: https://github.com/crossplane
+            description:
+              Crossplane is the cloud native control plane framework that allows
+              you to build control planes without needing to write code. Crossplane has
+              a highly extensible backend that enables you to orchestrate applications and
+              infrastructure no matter where they run and a highly configurable frontend
+              that lets you define the declarative API it offers.
+            url_for_bestpractices: https://www.bestpractices.dev/en/projects/3260
+            logo: crossplane.svg
+            twitter: https://twitter.com/crossplane_io
+            crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            extra:
+              accepted: "2020-06-25"
+              incubating: "2021-09-14"
+              dev_stats_url: https://crossplane.devstats.cncf.io/
+              artwork_url: https://github.com/cncf/artwork/blob/master/examples/sandbox.md#crossplane
+              youtube_url: https://www.youtube.com/channel/UC19FgzMBMqBro361HbE46Fw
+              clomonitor_name: crossplane
+              audits:
+                - date: "2023-03-23"
+                  type: fuzzing
+                  url: https://github.com/crossplane/crossplane/blob/master/security/ADA-fuzzing-audit-22.pdf
+                  vendor: Ada Logics
+                - date: "2023-07-27"
+                  type: fuzzing
+                  url: https://github.com/crossplane/crossplane/blob/master/security/ADA-security-audit-23.pdf
+                  vendor: Ada Logics
+              summary_personas: SREs, DevOps & Platform Engineers, Architects, Developers
+              summary_tags: kubernetes,control plane,platform engineering,multi-cloud
+              summary_use_case:
+                Crossplane allows you to build control planes without needing
+                to write code. Crossplane has a highly extensible backend that enables you
+                to orchestrate applications and infrastructure no matter where they run,
+                and a highly configurable frontend that lets you define the declarative
+                API it offers.
+              summary_business_use_case:
+                Crossplane is the control plane to power your developer
+                platform. The cloud vendors have been building with control planes for years.
+                Now Crossplane helps you do the same. Control planes are self-healing—they
+                automatically correct drift. Consumers can self-service fast because control
+                planes offer a single point of control for policy and permissions, and control
+                planes integrate easily with other systems because they expose an API, not
+                just a command-line.
+              summary_release_rate: Every 3 months
+              summary_integration: Kubernetes
+              summary_intro_url: https://youtu.be/Op7usZdqN3Q
+          - item:
+            name: Kestra
+            description:
+              Scalable, event-driven, language-agnostic orchestration and scheduling
+              platform to manage millions of workflows declaratively in code.
+            homepage_url: https://kestra.io/
+            repo_url: https://github.com/kestra-io/kestra
+            logo: kestra.svg
+            twitter: https://twitter.com/@kestra-io
+            crunchbase: https://www.crunchbase.com/organization/kestra
+            extra:
+              blog_url: https://kestra.io/blogs
+              slack_url: https://kestra.io/slack
+              youtube_url: https://www.youtube.com/@kestra-io
+          - item:
+            name: Knative
+            description:
+              'Knative is a developer-focused serverless application layer which
+              is a great complement to the existing Kubernetes application constructs. Knative
+              consists of three components: an HTTP-triggered autoscaling container runtime
+              called “Knative Serving”, a CloudEvents-over-HTTP asynchronous routing layer
+              called “Knative Eventing”, and a developer-focused function framework which
+              leverages the Serving and Eventing components, called "Knative Functions".'
+            homepage_url: https://knative.dev
+            project: incubating
+            repo_url: https://github.com/knative/serving
+            logo: knative.svg
+            twitter: https://twitter.com/KnativeProject
+            crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            allow_duplicate_repo: true
+            extra:
+              accepted: "2022-03-02"
+              incubating: "2022-03-02"
+              dev_stats_url: https://knative.devstats.cncf.io/
+              artwork_url: https://github.com/knative/docs/tree/main/docs/images/logo
+              stack_overflow_url: https://stackoverflow.com/questions/tagged/knative
+              mailing_list_url: https://groups.google.com/d/forum/knative-users
+              slack_url: https://slack.cncf.io
+              youtube_url: https://www.youtube.com/c/KnativeProject
+              clomonitor_name: knative
+              audits:
+                - date: "2023-07-13"
+                  type: fuzzing
+                  url: https://github.com/knative/docs/tree/main/reports/ADA-knative-fuzzing-audit-22-23.pdf
+                  vendor: Ada Logics
+                - date: "2023-11-27"
+                  type: security
+                  url: https://github.com/knative/docs/blob/main/reports/ADA-knative-security-audit-2023.pdf
+                  vendor: Ada Logics
+              summary_personas:
+                Cloud Architects, Cloud Developers, Platform Engineers,
+                DevOps Engineers, DevOps Practitioners
+              summary_tags: Serverless, CloudEvents, Functions, Scaling, Applications
+              summary_use_case:
+                Knative is system that helps teams develop, build, manage,
+                and maintain processes in Kubernetes. Its purpose is to simplify, automate,
+                and monitor deployments of Kubernetes so teams spend less time on maintenance
+                and more time on app development and projects. Knative takes over repetitive
+                and time-intensive tasks while removing obstacles and delays.
+              summary_business_use_case:
+                The power of Knative’s eventing and serverless
+                features allows companies to bridge processes between external eventing
+                systems with services and functions in Kubernetes.
+              summary_release_rate: Quarterly major releases
+              summary_integrations:
+                Apache Kafka, RabbitMQ, Redis, CNCF Buildpacks, Docker,
+                Podman
+              summary_languages: Go, Java, Node.js, Python, Rust
+              summary_intro_url: https://knative.dev/docs/getting-started/
+          - item:
+            name: Kubernetes
+            description:
+              Kubernetes is an open-source system for automating deployment,
+              scaling, and management of containerized applications
+            homepage_url: https://kubernetes.io/
+            project: loved
+            repo_url: https://github.com/kubernetes/kubernetes
+            logo: kubernetes.svg
+            twitter: https://twitter.com/kubernetesio
+            crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            allow_duplicate_repo: true
+            extra:
+              accepted: "2016-03-10"
+              incubating: "2016-03-10"
+              graduated: "2018-03-06"
+              cncf_tags:
+                - https://github.com/cncf/tag-runtime
+              dev_stats_url: https://k8s.devstats.cncf.io/
+              artwork_url: https://github.com/cncf/artwork/blob/master/examples/graduated.md#kubernetes-logos
+              stack_overflow_url: https://stackoverflow.com/questions/tagged/kubernetes
+              blog_url: http://blog.kubernetes.io/
+              mailing_list_url: https://groups.google.com/forum/#!forum/kubernetes-dev
+              slack_url: http://slack.k8s.io/
+              youtube_url: https://www.youtube.com/channel/UCZ2bu0qutTOM0tHYa_jkIwg
+              clomonitor_name: kubernetes
+              audits:
+                - date: "2019-08-06"
+                  type: security
+                  url: https://github.com/kubernetes/sig-security/tree/main/sig-security-external-audit/security-audit-2019/findings
+                  vendor: Trail of Bits and Atredis Partners
+                - date: "2023-04-19"
+                  type: security
+                  url: https://github.com/kubernetes/sig-security/tree/main/sig-security-external-audit/security-audit-2021-2022/findings
+                  vendor: NCC Group
+      - subcategory:
+        name: Coordination & Service Discovery
+        items:
+          - item:
+            name: Apache Zookeeper
+            homepage_url: https://zookeeper.apache.org/
+            repo_url: https://github.com/apache/zookeeper
+            logo: apache-zookeeper.svg
+            twitter: https://twitter.com/ApacheZooKeeper
+            crunchbase: https://www.crunchbase.com/organization/apache
+          - item:
+            name: etcd
+            homepage_url: https://etcd.io/
+            project: graduated
+            repo_url: https://github.com/etcd-io/etcd
+            logo: etcd.svg
+            twitter: https://twitter.com/etcdio
+            crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            extra:
+              accepted: "2018-12-11"
+              incubating: "2018-12-11"
+              graduated: "2020-11-24"
+              cncf_tags:
+                - https://github.com/cncf/tag-storage
+              dev_stats_url: https://etcd.devstats.cncf.io/
+              artwork_url: https://github.com/cncf/artwork/blob/master/examples/graduated.md#etcd-logos
+              stack_overflow_url: https://stackoverflow.com/questions/tagged/etcd
+              mailing_list_url: https://groups.google.com/forum/?hl=en#!forum/etcd-dev
+              slack_url: http://slack.k8s.io/
+              chat_channel: "#etcd"
+              clomonitor_name: etcd
+              audits:
+                - date: "2020-08-05"
+                  type: security
+                  url: https://github.com/etcd-io/etcd/blob/master/security/SECURITY_AUDIT.pdf
+                  vendor: Trail of Bits
+                - date: "2022-03-11"
+                  type: fuzzing
+                  url: https://github.com/etcd-io/etcd/blob/main/security/FUZZING_AUDIT_2022.PDF
+                  vendor: ADA Logics
+              summary_personas: Architects, Platform Engineers, SREs
+              summary_tags: distributed, key-value, consistent, datastore, reliability
+              summary_use_case:
+                Etcd is a distributed, reliable key-value store for the
+                most critical data of a distributed system. By using etcd, developers can
+                ensure that their applications have access to up-to-date configuration data,
+                even as they scale up or down, and can maintain consistency, fault tolerance
+                and coordination across multiple instances of the application.
+              summary_business_use_case:
+                Etcd can be used by businesses to manage the configuration
+                data and coordination needs of their applications, ensuring consistent and
+                reliable performance at scale.
+              summary_release_rate:
+                Major or Minor release approximately every 2 years,
+                and patch release every 1-3 months
+              summary_integrations:
+                Due to etcd's flexible and extensible architecture it
+                has been integrated as a data store for many projects such as Kubernetes,
+                CoreDNS and Hashicorp Vault.
+              summary_intro_url: https://etcd.io/docs/v3.6/learning/
+          - item:
+            name: Netflix Eureka
+            homepage_url: https://github.com/Netflix/eureka
+            repo_url: https://github.com/Netflix/eureka
+            logo: netflix-oss-eureka.svg
+            twitter: https://twitter.com/netflixoss
+            crunchbase: https://www.crunchbase.com/organization/netflix
+      - subcategory:
+        name: Remote Procedure Call
+        items:
+          - item:
+            name: Apache Thrift
+            homepage_url: https://thrift.apache.org/
+            repo_url: https://github.com/apache/thrift
+            logo: apache-thrift.svg
+            crunchbase: https://www.crunchbase.com/organization/apache
+          - item:
+            name: Avro
+            homepage_url: https://avro.apache.org/
+            repo_url: https://github.com/apache/avro
+            logo: avro.svg
+            crunchbase: https://www.crunchbase.com/organization/apache
+          - item:
+            name: gRPC
+            homepage_url: https://grpc.io/
+            project: incubating
+            repo_url: https://github.com/grpc/grpc
+            logo: grpc.svg
+            twitter: https://twitter.com/grpcio
+            crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            extra:
+              accepted: "2017-02-16"
+              incubating: "2017-02-16"
+              dev_stats_url: https://grpc.devstats.cncf.io/
+              artwork_url: https://github.com/cncf/artwork/blob/master/examples/incubating.md#grpc-logos
+              stack_overflow_url: https://stackoverflow.com/questions/tagged/grpc
+              blog_url: http://www.grpc.io/blog/
+              youtube_url: https://www.youtube.com/channel/UCrnk1HWelWnYtF78YZX80fg
+              gitter_url: https://gitter.im/grpc/grpc
+              clomonitor_name: grpc
+              audits:
+                - date: "2019-10-29"
+                  type: security
+                  url: https://github.com/grpc/grpc/blob/master/doc/security_audit.md
+                  vendor: Cure53
+      - subcategory:
+        name: Service Proxy
+        items:
+          - item:
+            name: Envoy
+            homepage_url: https://www.envoyproxy.io
+            project: graduated
+            repo_url: https://github.com/envoyproxy/envoy
+            logo: envoy.svg
+            twitter: https://twitter.com/envoyproxy
+            crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            allow_duplicate_repo: true
+            extra:
+              accepted: "2017-09-13"
+              incubating: "2017-09-13"
+              graduated: "2018-11-28"
+              cncf_tags:
+                - https://github.com/cncf/tag-network
+              dev_stats_url: https://envoy.devstats.cncf.io/
+              artwork_url: https://github.com/cncf/artwork/blob/master/examples/graduated.md#envoy-logos
+              stack_overflow_url: https://stackoverflow.com/questions/tagged/envoyproxy
+              slack_url: https://envoyproxy.slack.com/
+              clomonitor_name: envoy
+              audits:
+                - date: "2018-02-27"
+                  type: security
+                  url: https://github.com/envoyproxy/envoy/blob/main/docs/security/audit_cure53_2018.pdf
+                  vendor: Cure53
+                - date: "2021-05-15"
+                  type: fuzzing
+                  url: https://github.com/envoyproxy/envoy/blob/main/docs/security/audit_fuzzer_adalogics_2021.pdf
+                  vendor: Ada Logics
+          - item:
+            name: HAProxy
+            homepage_url: https://www.haproxy.com/
+            repo_url: https://github.com/haproxy/haproxy
+            logo: haproxy.svg
+            crunchbase: https://www.crunchbase.com/organization/haproxy-technologies
+          - item:
+            name: Netflix Zuul
+            homepage_url: https://github.com/Netflix/zuul
+            repo_url: https://github.com/Netflix/zuul
+            logo: netflix-oss-zuul.svg
+            twitter: https://twitter.com/netflixoss
+            crunchbase: https://www.crunchbase.com/organization/netflix
+          - item:
+            name: NGINX
+            homepage_url: https://www.nginx.com/
+            repo_url: https://github.com/nginx/nginx
+            logo: nginx.svg
+            crunchbase: https://www.crunchbase.com/organization/nginx
+            allow_duplicate_repo: true
+          - item:
+            name: Traefik
+            homepage_url: https://traefik.io/traefik
+            repo_url: https://github.com/traefik/traefik
+            logo: traefik.svg
+            crunchbase: https://www.crunchbase.com/organization/containous
+      - subcategory:
+        name: API Gateway
+        items:
+          - item:
+            name: Gloo
+            homepage_url: https://www.solo.io
+            repo_url: https://github.com/solo-io/gloo
+            logo: gloo.svg
+            crunchbase: https://www.crunchbase.com/organization/solo-io
+          - item:
+            name: Gravitee.io
+            homepage_url: https://gravitee.io
+            repo_url: https://github.com/gravitee-io/gravitee-api-management
+            logo: gravitee.svg
+            crunchbase: https://www.crunchbase.com/organization/gravitee-io
+          - item:
+            name: Kong
+            homepage_url: https://konghq.com/
+            repo_url: https://github.com/Kong/kong
+            logo: kong.svg
+            crunchbase: https://www.crunchbase.com/organization/konghq
+          - item:
+            name: Tyk
+            homepage_url: https://tyk.io/
+            repo_url: https://github.com/TykTechnologies/tyk
+            logo: tyk.svg
+            crunchbase: https://www.crunchbase.com/organization/tyk-io
+      - subcategory:
+        name: Service Mesh
+        items:
+          - item:
+            name: Consul
+            homepage_url: https://www.consul.io/
+            repo_url: https://github.com/hashicorp/consul
+            logo: consul.svg
+            crunchbase: https://www.crunchbase.com/organization/hashicorp
+          - item:
+            name: Istio
+            description:
+              Simplify observability, traffic management, security, and policy
+              with the Istio service mesh.
+            homepage_url: https://istio.io/
+            project: graduated
+            repo_url: https://github.com/istio/istio
+            logo: istio.svg
+            twitter: https://twitter.com/IstioMesh
+            crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            allow_duplicate_repo: true
+            extra:
+              accepted: "2022-09-30"
+              incubating: "2022-09-30"
+              graduated: "2023-07-12"
+              cncf_tags:
+                - https://github.com/cncf/tag-network
+              dev_stats_url: https://istio.devstats.cncf.io/
+              stack_overflow_url: https://stackoverflow.com/questions/tagged/istio
+              blog_url: https://istio.io/blog/
+              slack_url: https://slack.istio.io/
+              summary_business_use_case:
+                Security, Traffic Management, Observability, Policy
+                Enforcement.
+              summary_integrations: https://istio.io/latest/docs/ops/integrations/
+              summary_intro_url: https://www.youtube.com/watch?v=hkR1M6qwpnw
+              summary_personas: SREs, DevOps Engineers, Architects, Platform Engineers
+              summary_release_rate: Every 3 months
+              summary_tags:
+                observability, Service Mesh, mTLS, traffic management, multi-cluster,
+                load balancing, policy, security, extensibility
+              summary_use_case:
+                "Istio addresses the challenges developers and operators
+                face with a distributed or microservices architecture. Whether youre building
+                from scratch or migrating existing applications to cloud native, Istio can
+                help. Read more at: https://istio.io/latest/about/solutions/"
+              youtube_url: https://www.youtube.com/c/Istio
+              clomonitor_name: istio
+              audits:
+                - date: "2023-01-30"
+                  type: security
+                  url: https://istio.io/latest/blog/2023/ada-logics-security-assessment/Istio%20audit%20report%20-%20ADA%20Logics%20-%202023-01-30%20-%20v1.0.pdf
+                  vendor: ADA Logics
+          - item:
+            name: Traefik Mesh
+            homepage_url: https://traefik.io/traefik-mesh
+            repo_url: https://github.com/traefik/mesh
+            logo: traefik-mesh.svg
+            crunchbase: https://www.crunchbase.com/organization/containous
+            extra:
+              accepted: "2020-03-16"
+              dev_stats_url: https://smi.devstats.cncf.io/
+              artwork_url: https://github.com/cncf/artwork/blob/master/examples/sandbox.md#service-mesh-interface-logos
+              blog_url: https://smi-spec.io/blog/
+              slack_url: https://cloud-native.slack.com/messages/smi
+              youtube_url: https://www.youtube.com/playlist?list=PLj6h78yzYM2N5upvsCMVbct4WSrKJo49p
+  - category:
+    name: App Definition and Development
+    subcategories:
+      - subcategory:
+        name: Database
+        items:
+          - item:
+            name: Apache Hadoop
+            homepage_url: https://hadoop.apache.org/
+            repo_url: https://github.com/apache/hadoop
+            logo: apache-hadoop.svg
+            twitter: https://twitter.com/twitterhadoop
+            crunchbase: https://www.crunchbase.com/organization/apache
+          - item:
+            name: Cassandra
+            homepage_url: https://cassandra.apache.org/_/index.html
+            repo_url: https://github.com/apache/cassandra
+            logo: cassandra.svg
+            twitter: https://twitter.com/cassandra
+            crunchbase: https://www.crunchbase.com/organization/apache
+          - item:
+            name: ClickHouse
+            homepage_url: https://clickhouse.com
+            repo_url: https://github.com/ClickHouse/ClickHouse
+            logo: clickhouse.svg
+            twitter: https://twitter.com/clickhousedb
+            crunchbase: https://www.crunchbase.com/organization/clickhouse
+          - item:
+            name: CockroachDB
+            homepage_url: https://www.cockroachlabs.com/
+            repo_url: https://github.com/cockroachdb/cockroach
+            logo: cockroach-labs.svg
+            open_source: false
+            twitter: https://twitter.com/CockroachDB
+            crunchbase: https://www.crunchbase.com/organization/cockroach-labs
+          - item:
+            name: Infinispan
+            homepage_url: https://infinispan.org/
+            repo_url: https://github.com/infinispan/infinispan
+            logo: infinispan.svg
+            twitter: https://twitter.com/infinispan
+            crunchbase: https://www.crunchbase.com/organization/red-hat
+          - item:
+            name: MongoDB
+            homepage_url: https://www.mongodb.com/
+            repo_url: https://github.com/mongodb/mongo
+            logo: mongo-db.svg
+            open_source: false
+            crunchbase: https://www.crunchbase.com/organization/mongodb-inc
+          - item:
+            name: MySQL
+            homepage_url: https://www.oracle.com/mysql/
+            repo_url: https://github.com/mysql/mysql-server
+            logo: my-sql.svg
+            twitter: https://twitter.com/mysql
+            crunchbase: https://www.crunchbase.com/organization/oracle
+          - item:
+            name: Neo4j
+            homepage_url: https://neo4j.com
+            repo_url: https://github.com/neo4j/neo4j
+            logo: neo4j.svg
+            crunchbase: https://www.crunchbase.com/organization/neo-technology
+          - item:
+            name: PostgreSQL
+            homepage_url: https://www.postgresql.org/
+            repo_url: https://github.com/postgres/postgres
+            logo: postgre-sql.svg
+            crunchbase: https://www.crunchbase.com/organization/postgresql
+          - item:
+            name: Redis
+            homepage_url: https://redis.io/
+            repo_url: https://github.com/redis/redis
+            logo: redis.svg
+            crunchbase: https://www.crunchbase.com/organization/redis-labs
+      - subcategory:
+        name: Streaming & Messaging
+        items:
+          - item:
+            name: Amazon Kinesis
+            description:
+              Amazon Kinesis makes it easy to collect, process, and analyze real-time,
+              streaming data so you can get timely insights and react quickly to new information.
+            homepage_url: https://aws.amazon.com/kinesis/
+            logo: amazon-kinesis.svg
+            crunchbase: https://www.crunchbase.com/organization/amazon-web-services
+          - item:
+            name: Apache NiFi
+            homepage_url: https://nifi.apache.org/
+            repo_url: https://github.com/apache/nifi
+            logo: apache-ni-fi.svg
+            twitter: https://twitter.com/apachenifi
+            crunchbase: https://www.crunchbase.com/organization/apache
+          - item:
+            name: Azure Event Hubs
+            description:
+              "Event Hubs is a fully managed, real-time data ingestion service
+              that’s simple, trusted, and scalable. "
+            homepage_url: https://azure.microsoft.com/en-us/services/event-hubs/
+            logo: azure-event-hubs.svg
+            twitter: https://twitter.com/azure
+            crunchbase: https://www.crunchbase.com/organization/microsoft
+          - item:
+            name: Beam
+            homepage_url: https://beam.apache.org/
+            repo_url: https://github.com/apache/beam
+            logo: beam.svg
+            twitter: https://twitter.com/ApacheBeam
+            crunchbase: https://www.crunchbase.com/organization/apache
+          - item:
+            name: Flink
+            homepage_url: https://flink.apache.org/
+            repo_url: https://github.com/apache/flink
+            logo: flink.svg
+            twitter: https://twitter.com/apacheflink
+            crunchbase: https://www.crunchbase.com/organization/apache
+          - item:
+            name: Google Cloud Dataflow
+            description:
+              Cloud Dataflow is a fully-managed service for transforming and
+              enriching data in stream (real time) and batch (historical) modes with equal
+              reliability and expressiveness -- no more complex workarounds or compromises
+              needed. And with its serverless approach to resource provisioning and management,
+              you have access to virtually limitless capacity to solve your biggest data
+              processing challenges, while paying only for what you use.
+            homepage_url: https://cloud.google.com/dataflow/
+            logo: google-cloud-dataflow.svg
+            twitter: https://twitter.com/GCPcloud
+            crunchbase: https://www.crunchbase.com/organization/google
+          - item:
+            name: Hazelcast Jet
+            homepage_url: https://jet-start.sh
+            repo_url: https://github.com/hazelcast/hazelcast-jet
+            logo: hazelcast-jet.svg
+            open_source: false
+            crunchbase: https://www.crunchbase.com/organization/hazelcast
+          - item:
+            name: Kafka
+            homepage_url: https://kafka.apache.org/
+            repo_url: https://github.com/apache/kafka
+            logo: kafka.svg
+            twitter: https://twitter.com/apachekafka
+            crunchbase: https://www.crunchbase.com/organization/apache
+          - item:
+            name: NATS
+            description:
+              NATS.io is a connective technology for distributed systems and
+              is a perfect fit to connect devices, edge, cloud or hybrid deployments. True
+              multi-tenancy makes NATS ideal for SaaS and self-healing and scaling technology
+              allows for topology changes anytime with zero downtime.
+            homepage_url: https://nats.io/
+            project: incubating
+            repo_url: https://github.com/nats-io/nats-server
+            url_for_bestpractices: https://github.com/nats-io
+            additional_repos:
+              - repo_url: https://github.com/nats-io/nats.go
+              - repo_url: https://github.com/nats-io/nats.js
+              - repo_url: https://github.com/nats-io/nats.py
+              - repo_url: https://github.com/nats-io/nats.java
+              - repo_url: https://github.com/nats-io/nats.net
+              - repo_url: https://github.com/nats-io/nats.c
+              - repo_url: https://github.com/nats-io/nats.rs
+              - repo_url: https://github.com/nats-io/nats.deno
+              - repo_url: https://github.com/nats-io/k8s
+              - repo_url: https://github.com/nats-io/nats-surveyor
+              - repo_url: https://github.com/nats-io/natscli
+              - repo_url: https://github.com/nats-io/nats-architecture-and-design
+              - repo_url: https://github.com/nats-io/nats.docs
+              - repo_url: https://github.com/nats-io/nack
+              - repo_url: https://github.com/nats-io/nats-top
+              - repo_url: https://github.com/nats-io/terraform-provider-jetstream
+              - repo_url: https://github.com/nats-io/jetstream-gh-action
+            logo: nats.svg
+            twitter: https://twitter.com/nats_io
+            crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            extra:
+              accepted: "2018-03-15"
+              incubating: "2018-03-15"
+              dev_stats_url: https://nats.devstats.cncf.io/
+              artwork_url: https://github.com/cncf/artwork/blob/master/examples/incubating.md#nats-logos
+              stack_overflow_url: https://stackoverflow.com/questions/tagged/nats.io
+              mailing_list_url: https://nats.io/blog/
+              slack_url: https://natsio.slack.com/join/shared_invite/enQtMzE2NDkxNDI2NTE1LTc5ZDEzYTkwYWZkYWQ5YjY1MzBjMWZmYzA5OGQxMzlkMGQzMjYxNGM3MWYxMjNiYmNjNzIwMTVjMWE2ZDgxZGM
+              summary_personas:
+                Developers, Architects, Engineers, Platform teams, Cloud
+                Architects
+              summary_tags:
+                Edge, Muli-cloud, Messaging, Streaming Data, PubSub, KeyValue,
+                Microservices, Kubernetes
+              summary_use_case: |
+                The NATS Server acts as a central nervous system for building distributed applications. Client APIs are provided in over 40 languages and frameworks including Go, Java, JavaScript/TypeScript, Python, C, .Net, and Rust. NATS supports multiple microservices patterns including PubSub, Request-Reply, KeyValue and Object store via a simple API.
+              summary_business_use_case:
+                NATS is used to develop & deploy globally distributed
+                Edge & Multi-cloud applications as part of a digital transformation or modernization
+                initiative. Users may deploy NATS as part of a private cloud, hybrid , or
+                SaaS model. Applications can be developed locally and then be scaled from
+                single node, to clusters, to global superclusters independently of cloud
+                providers, geography or requirements for additional infrastructure such
+                as load balancers, firewalls, etc... All with a zero trust security model
+                and integrated multi-tenant platform capabilities
+              summary_release_rate: null
+              summary_integrations:
+                Docker, Kubernetes, K3S, WASMCloud, CloudEvents, Helm,
+                Argo, DAPR, Prometheus, Benthos
+              summary_intro_url: https://rethink.synadia.com/episodes/1/
+              clomonitor_name: nats
+              audits:
+                - date: "2019-02-06"
+                  type: security
+                  url: https://github.com/nats-io/nats-general/blob/master/reports/Cure53_NATS_Audit.pdf
+                  vendor: Cure53
+          - item:
+            name: Pulsar
+            homepage_url: https://pulsar.apache.org/
+            repo_url: https://github.com/apache/pulsar
+            logo: pulsar.svg
+            twitter: https://twitter.com/apache_pulsar
+            crunchbase: https://www.crunchbase.com/organization/apache
+          - item:
+            name: RabbitMQ
+            homepage_url: https://www.rabbitmq.com/
+            repo_url: https://github.com/rabbitmq/rabbitmq-server
+            logo: rabbit-mq.svg
+            crunchbase: https://www.crunchbase.com/organization/rabbit-technologies
+          - item:
+            name: Redpanda
+            homepage_url: https://redpanda.com/platform
+            repo_url: https://github.com/redpanda-data/redpanda
+            logo: redpanda.svg
+            open_source: false
+            crunchbase: https://www.crunchbase.com/organization/vectorized
+      - subcategory:
+        name: Application Definition & Image Build
+        items:
+          - item:
+            name: Backstage
+            homepage_url: https://backstage.io/
+            project: incubating
+            repo_url: https://github.com/backstage/backstage
+            logo: backstage.svg
+            crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            extra:
+              accepted: "2020-09-08"
+              incubating: "2022-03-15"
+              dev_stats_url: https://backstage.devstats.cncf.io/
+              artwork_url: https://github.com/cncf/artwork/tree/master/projects/backstage
+              clomonitor_name: backstage
+              audits:
+                - date: "2022-08-23"
+                  type: security
+                  url: https://backstage.io/blog/2022/08/23/backstage-security-audit/
+                  vendor: X41 D-Sec
+              summary_personas: Developers, SREs
+              summary_tags: Developer Portals, IDP, Service Catalog, Observability
+              summary_use_case:
+                Backstage is an open platform for building developer portals,
+                which unify all your infrastructure tooling, services, and documentation
+                with a single, consistent UI.
+              summary_release_rate:
+                Backstage releases versions on a monthly cadence, with
+                a weekly next release of the main branch.
+              summary_integrations:
+                Kubernetes, GitHub, GitLab, Bitbucket, Azure DevOps,
+                Jenkins, and more with plugins
+              blog_url: https://backstage.io/blog
+              slack_url: https://discord.gg/backstage-687207715902193673
+          - item:
+            name: Dapr
+            homepage_url: https://dapr.io
+            project: incubating
+            repo_url: https://github.com/dapr/dapr
+            logo: dapr.svg
+            twitter: https://twitter.com/DaprDev
+            crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            allow_duplicate_repo: true
+            extra:
+              accepted: "2021-11-09"
+              incubating: "2021-11-09"
+              dev_stats_url: https://dapr.devstats.cncf.io/
+              artwork_url: https://github.com/cncf/artwork/blob/master/examples/incubating.md#dapr-logos
+              blog_url: https://blog.dapr.io/posts
+              slack_url: https://discord.com/invite/ptHhX6jc34
+              summary_personas: Developers, Platform engineers
+              summary_tags:
+                Developer APIs, Distributed Systems, Microservices, HTTP, gRPC,
+                Go, Java, Python, .NET, Javascript, C++, Rust, CLI
+              summary_use_case:
+                The Distributed Application Runtime (Dapr) provides APIs
+                that simplify microservice architecture development and increases developer
+                productivity. Whether your communication pattern is service-to-service invocation
+                or pub/sub messaging, Dapr helps you write resilient and secured microservices.
+                By letting Dapr’s sidecar take care of the complex challenges such as service
+                discovery, message broker integration, encryption, observability, and secret
+                management, developers can focus on business logic and keep their code simple.
+              summary_business_use_case:
+                Deliver distributed system applications in half
+                the time. Dapr provides APIs that abstract away the complexity of common
+                challenges developers encounter regularly when building distributed applications.
+                These API building blocks can be leveraged as the need arises - use one,
+                several, or all to develop applications faster and deliver solutions on
+                time. Dapr leverages proven practices for distributed application development
+                that enable developers to build resilient, secured systems. By using Dapr
+                in your application, you adopt these best practices without having to spend
+                time solving common challenges.
+              summary_release_rate: 4 times per year (each quarter)
+              summary_integration:
+                Kubernetes, Docker, Open Telemetry, gRPC, CloudEvents,
+                spiffe, Knative, Helm, Prometheus, Cert Manager
+              summary_intro_url: https://youtu.be/9o9iDAgYBA8
+              clomonitor_name: dapr
+              audits:
+                - date: "2023-06-30"
+                  type: fuzzing
+                  url: https://docs.dapr.io/docs/Dapr-june-2023-fuzzing-audit-report.pdf
+                  vendor: Ada Logics
+                - date: "2023-09-05"
+                  type: security
+                  url: https://docs.dapr.io/docs/Dapr-september-2023-security-audit-report.pdf
+                  vendor: Ada Logics
+          - item:
+            name: Gradle Build Tool
+            description:
+              Gradle is a build automation tool for multi-language software development.
+              It controls the development process in the tasks of compilation  and packaging
+              to testing, deployment, and publishing. Supported languages include Java (Kotlin,
+              Groovy, Scala), C/C++, and JavaScript.
+            homepage_url: https://gradle.org
+            repo_url: https://github.com/gradle/gradle
+            logo: gradle.svg
+            crunchbase: https://www.crunchbase.com/organization/gradle
+          - item:
+            name: Helm
+            homepage_url: https://helm.sh/
+            project: graduated
+            repo_url: https://github.com/helm/helm
+            logo: helm.svg
+            twitter: https://twitter.com/helmpack
+            crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            extra:
+              accepted: "2018-06-01"
+              incubating: "2018-06-01"
+              graduated: "2020-05-01"
+              cncf_tags:
+                - https://github.com/cncf/tag-app-delivery
+              dev_stats_url: https://helm.devstats.cncf.io/
+              artwork_url: https://github.com/cncf/artwork/blob/main/examples/graduated.md
+              slack_url: https://slack.k8s.io
+              chat_channel: "#helm-dev"
+              stack_overflow_url: https://stackoverflow.com/questions/tagged/helm
+              clomonitor_name: helm
+              audits:
+                - date: "2019-04-19"
+                  type: security
+                  url: https://github.com/helm/community/blob/master/security-audit/HLM-01-report.pdf
+                  vendor: Cure 53 and Trail of Bits
+                - date: "2023-03-31"
+                  type: fuzzing
+                  url: https://github.com/helm/community/blob/main/security-audit/FUZZING_AUDIT_2022.pdf
+                  vendor: Ada Logics
+          - item:
+            name: Microcks
+            homepage_url: https://microcks.io
+            project: sandbox
+            repo_url: https://github.com/microcks/microcks
+            logo: microcks.svg
+            twitter: https://twitter.com/microcksio
+            crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            extra:
+              accepted: "2023-06-22"
+              dev_stats_url: https://microcks.devstats.cncf.io/
+              artwork_url: https://github.com/cncf/artwork/blob/master/examples/sandbox.md#microcks-logos
+              blog_url: https://microcks.io/blog/
+              mailing_list_url: https://github.com/orgs/microcks/discussions
+              slack_url: https://cloud-native.slack.com/messages/microcks
+              youtube_url: https://youtube.com/c/Microcks
+              summary_personas: Developers, Architects, API Owners, QA Testers
+              summary_tags: api,mocking,testing,openapi,graphql,grpc,asyncapi
+          - item:
+            name: OpenAPI
+            homepage_url: https://www.openapis.org/
+            repo_url: https://github.com/OAI/OpenAPI-Specification
+            logo: openapi.svg
+            crunchbase: https://www.crunchbase.com/organization/the-open-api-initiative
+          - item:
+            name: Quarkus
+            description:
+              Quarkus is a Kubernetes-native Java framework, designed to enable
+              Java developers to create applications for a modern, cloud-native world. It
+              is tailored for GraalVM and HotSpot, and crafted from best-of-breed Java libraries
+              and standards.
+            homepage_url: https://www.quarkus.io/
+            repo_url: https://github.com/quarkusio/quarkus
+            logo: quarkus.svg
+            twitter: https://twitter.com/QuarkusIO
+            crunchbase: https://www.crunchbase.com/organization/red-hat
+            extra:
+              stack_overflow_url: https://stackoverflow.com/questions/tagged/quarkus
+              blog_url: https://quarkus.io/blog/
+              youtube_url: https://www.youtube.com/channel/UCaW8QG_QoIk_FnjLgr5eOqg
+      - subcategory:
+        name: Continuous Integration & Delivery
+        items:
+          - item:
+            name: Argo
+            description:
+              Kubernetes-native tools to run workflows, manage clusters, and
+              do GitOps right.
+            homepage_url: https://argoproj.github.io/
+            project: loved
+            repo_url: https://github.com/argoproj/argo-cd
+            logo: argo.svg
+            twitter: https://twitter.com/argoproj
+            crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            extra:
+              accepted: "2020-03-26"
+              incubating: "2020-03-26"
+              graduated: "2022-12-06"
+              cncf_tags:
+                - https://github.com/cncf/tag-app-delivery
+              dev_stats_url: https://argo.devstats.cncf.io/
+              artwork_url: https://github.com/cncf/artwork/tree/master/projects/argo
+              stack_overflow_url: https://stackoverflow.com/questions/tagged/argoproj+or+argo
+              blog_url: https://blog.argoproj.io/
+              slack_url: https://argoproj.github.io/community/join-slack
+              youtube_url: https://www.youtube.com/channel/UCOvYmppcbOPm1viN6ust3lA
+              summary_personas:
+                Application Developers, ML Engineers, DevOps Engineers,
+                Architects, Platform Engineers
+              summary_tags:
+                application deployment, continuous deployment, data pipelines,
+                machine learning, Kubernetes workflows
+              summary_use_case:
+                Argo CD and Argo Rollouts - Manage application definitions,
+                configurations, and environments declaratively in Git. Introduce blue-green
+                and canary deployments, canary analysis, experimentation, and progressive
+                delivery features to your Kubernetes cluster. Argo Workflows and Argo Events
+                - Run jobs and full workflows on any Kubernetes cluster. Define multiple
+                dependencies from a variety of event sources and trigger Kubernetes objects
+                after successful event dependencies resolution.
+              summary_business_use_case:
+                Argo CD and Argo Rollouts - enabling a high frequency
+                of deployment for quick delivery of new features and updates (constant iteration),
+                decreasing mean time to recovery (MTTR) to recover quickly as if nothing
+                had happened on production, decreasing lead time for changes and updates,
+                to make sure that your clients stay satisfied and secure. Argo Workflows
+                and Argo Events - creating scalable and manageable data pipelines, orchestrating
+                highly parallel jobs without the overhead of legacy VMs or server environments,
+                defining multiple dependencies from various event sources like webhooks,
+                S3, schedules, streams, and triggering Kubernetes objects after successful
+                event dependencies resolution.
+              summary_release_rate: 7-14 days
+              summary_intro_url:
+                "Argo Workflows: https://youtu.be/TZgLkCFQ2tk, Argo CD:
+                https://youtu.be/aWDIQMbp1cc"
+              clomonitor_name: argo
+              audits:
+                - date: "2022-02-28"
+                  type: fuzzing
+                  url: https://github.com/argoproj/argoproj/blob/dd7cae43d81c5a11f21ff4ea0a4afadcae4799c7/docs/audit_fuzzer_adalogics_2022.pdf
+                  vendor: ADA Logics
+                - date: "2022-07-18"
+                  type: security
+                  url: https://github.com/argoproj/argoproj/blob/main/docs/argo_security_audit_2022.pdf
+                  vendor: ADA Logics
+          - item:
+            name: CircleCI
+            homepage_url: https://circleci.com/
+            logo: circle-ci.svg
+            crunchbase: https://www.crunchbase.com/organization/circle-ci
+          - item:
+            name: GitHub Actions
+            description:
+              GitHub Actions makes it easy to automate all your software workflows,
+              now with world-class CI/CD. Build, test, and deploy your code right from GitHub.
+              Make code reviews, branch management, and issue triaging work the way you
+              want.
+            homepage_url: https://github.com/features/actions
+            project: loved
+            logo: github-actions.svg
+            crunchbase: https://www.crunchbase.com/organization/github
+          - item:
+            name: GitLab
+            homepage_url: https://about.gitlab.com/
+            repo_url: https://github.com/gitlabhq/gitlabhq
+            url_for_bestpractices: https://gitlab.com/gitlab-org/gitlab-ce
+            logo: gitlab.svg
+            crunchbase: https://www.crunchbase.com/organization/gitlab-com
+          - item:
+            name: Google Cloud Build
+            description:
+              Cloud Build lets you build software quickly across all languages.
+              Get complete control over defining custom workflows for building, testing,
+              and deploying across multiple environments such as VMs, serverless, Kubernetes,
+              or Firebase.
+            homepage_url: https://cloud.google.com/build
+            logo: google-cloud-build.svg
+            twitter: https://twitter.com/GCPcloud
+            crunchbase: https://www.crunchbase.com/organization/google
+          - item:
+            name: Jenkins
+            homepage_url: https://jenkins.io/
+            repo_url: https://github.com/jenkinsci/jenkins
+            logo: jenkins.svg
+            twitter: https://twitter.com/jenkinsci
+            crunchbase: https://www.crunchbase.com/organization/continuous-delivery-foundation-cdf
+          - item:
+            name: Liquibase
+            description:
+              Liquibase helps release software faster by bringing DevOps to the
+              database
+            homepage_url: https://www.liquibase.com/
+            repo_url: https://github.com/liquibase/liquibase
+            logo: liquibase.svg
+            crunchbase: https://www.crunchbase.com/organization/datical
+            extra:
+              slack_url: https://discord.gg/Kk3MsFE2
+          - item:
+            name: Spinnaker
+            homepage_url: https://www.spinnaker.io/
+            repo_url: https://github.com/spinnaker/spinnaker
+            logo: spinnaker.svg
+            twitter: https://twitter.com/spinnakerio
+            crunchbase: https://www.crunchbase.com/organization/continuous-delivery-foundation-cdf
+  - category:
+    name: Platform
+    subcategories:
+      - subcategory:
+        name: Certified Kubernetes - Distribution
+        items: []
+      - subcategory:
+        name: Certified Kubernetes - Hosted
+        items: []
+      - subcategory:
+        name: Certified Kubernetes - Installer
+        items: []
+      - subcategory:
+        name: PaaS/Container Service
+        items: []
+  - category:
+    name: Serverless
+    subcategories:
+      - subcategory:
+        name: Security
+        items: []
+      - subcategory:
+        name: Tools
+        items:
+          - item:
+            name: Cloud Native Landscape
+            homepage_url: https://landscape.cncf.io/
+            repo_url: https://github.com/cncf/landscapeapp
+            logo: cloud-native-landscape.svg
+            crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+      - subcategory:
+        name: Framework
+        items:
+          - item:
+            name: Serverless
+            homepage_url: https://serverless.com/
+            repo_url: https://github.com/serverless/serverless
+            logo: serverless.svg
+            crunchbase: https://www.crunchbase.com/organization/serverless
+      - subcategory:
+        name: Hosted Platform
+        items:
+          - item:
+            name: AWS Lambda
+            description:
+              AWS Lambda lets you run code without provisioning or managing servers.
+              You pay only for the compute time you consume - there is no charge when your
+              code is not running.
+            homepage_url: https://aws.amazon.com/lambda/
+            logo: aws-lambda.svg
+            crunchbase: https://www.crunchbase.com/organization/amazon-web-services
+          - item:
+            name: Azure Functions
+            description:
+              Develop more efficiently with Functions, an event-driven serverless
+              compute platform that can also solve complex orchestration problems. Build
+              and debug locally without additional setup, deploy and operate at scale in
+              the cloud, and integrate services using triggers and bindings.
+            homepage_url: https://azure.microsoft.com/en-us/services/functions/
+            repo_url: https://github.com/Azure/azure-functions-host
+            logo: azure-functions.svg
+            twitter: https://twitter.com/Azure
+            crunchbase: https://www.crunchbase.com/organization/microsoft
+          - item:
+            name: Google Cloud Functions
+            description:
+              Your development agility comes from building systems composed of
+              small, independent units of functionality focused on doing one thing well.
+              Cloud Functions lets you build and deploy services at the level of a single
+              function, not at the level of entire applications, containers, or VMs.
+            homepage_url: https://cloud.google.com/functions/
+            logo: google-cloud-functions.svg
+            twitter: https://twitter.com/GCPcloud
+            crunchbase: https://www.crunchbase.com/organization/google
+          - item:
+            name: Google Cloud Run
+            description:
+              Cloud Run allows you to build and deploy scalable containerized
+              apps written in any language (including Go, Python, Java, Node.js, .NET, and
+              Ruby) on a fully managed serverless platform.
+            homepage_url: https://cloud.google.com/run/
+            logo: google-cloud-run.svg
+            twitter: https://twitter.com/GoogleCloudTech
+            crunchbase: https://www.crunchbase.com/organization/google
+          - item:
+            name: Vercel
+            homepage_url: https://vercel.com/
+            logo: vercel.svg
+            crunchbase: https://www.crunchbase.com/organization/vercel
+      - subcategory:
+        name: Installable Platform
+        items: []
+  - category:
+    name: Observability and Analysis
+    subcategories:
+      - subcategory:
+        name: Monitoring
+        items:
+          - item:
+            name: Beats
+            homepage_url: https://www.elastic.co/beats
+            repo_url: https://github.com/elastic/beats
+            logo: beats.svg
+            crunchbase: https://www.crunchbase.com/organization/elasticsearch
+          - item:
+            name: Datadog
+            homepage_url: https://www.datadoghq.com/
+            logo: datadog.svg
+            crunchbase: https://www.crunchbase.com/organization/datadog
+          - item:
+            name: Dynatrace
+            homepage_url: https://www.dynatrace.com/
+            logo: dynatrace.svg
+            crunchbase: https://www.crunchbase.com/organization/dynatrace-software
+          - item:
+            name: Google Stackdriver
+            description:
+              Stackdriver aggregates metrics, logs, and events from infrastructure,
+              giving developers and operators a rich set of observable signals that speed
+              root-cause analysis and reduce mean time to resolution (MTTR).
+            homepage_url: https://cloud.google.com/products/operations
+            logo: google-stackdriver.svg
+            twitter: https://twitter.com/GCPcloud
+            crunchbase: https://www.crunchbase.com/organization/google
+          - item:
+            name: Grafana
+            description:
+              Grafana allows you to query, visualize, alert on and understand
+              your metrics no matter where they are stored. Create, explore, and share beautiful
+              dashboards with your team and foster a data driven culture.
+            homepage_url: https://grafana.com/
+            repo_url: https://github.com/grafana/grafana
+            logo: grafana.svg
+            crunchbase: https://www.crunchbase.com/organization/raintank
+          - item:
+            name: Prometheus
+            homepage_url: https://prometheus.io/
+            project: loved
+            repo_url: https://github.com/prometheus/prometheus
+            logo: prometheus.svg
+            twitter: https://twitter.com/PrometheusIO
+            crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            extra:
+              accepted: "2016-05-09"
+              incubating: "2016-05-09"
+              graduated: "2018-08-09"
+              cncf_tags:
+                - https://github.com/cncf/tag-observability
+              dev_stats_url: https://prometheus.devstats.cncf.io/
+              artwork_url: https://github.com/cncf/artwork/blob/master/examples/graduated.md#prometheus-logos
+              stack_overflow_url: https://stackoverflow.com/questions/tagged/prometheus
+              blog_url: https://prometheus.io/blog/
+              mailing_list_url: https://prometheus.io/community/
+              youtube_url: https://www.youtube.com/channel/UC4pLFely0-Odea4B2NL1nWA
+              slack_url: https://libera.chat/
+              chat_channel: "#prometheus"
+              summary_personas:
+                Cluster Administrators, Developers, SREs, Platform Engineers,
+                Network Engineers
+              summary_tags: monitoring, alerting, observability, instrumentation
+              summary_use_case: metrics-based monitoring and alerting
+              summary_business_use_case:
+              summary_release_rate: every 6 weeks for prometheus/prometheus
+              summary_integrations:
+                See [exporters](https://prometheus.io/docs/instrumenting/exporters/)
+                and [clientlibs](https://prometheus.io/docs/instrumenting/clientlibs/) plus
+                many service discoveries.
+              summary_intro_url:
+              clomonitor_name: prometheus
+              audits:
+                - date: "2018-06-11"
+                  type: security
+                  url: https://prometheus.io/assets/downloads/2018-06-11--cure53_security_audit.pdf
+                  vendor: Cure53
+                - date: "2020-07-21"
+                  type: security
+                  url: https://prometheus.io/assets/downloads/2020-07-21--cure53_security_audit_node_exporter.pdf
+                  vendor: Cure53
+          - item:
+            name: Sentry
+            homepage_url: https://sentry.io/welcome/
+            repo_url: https://github.com/getsentry/sentry
+            logo: sentry.svg
+            open_source: false
+            crunchbase: https://www.crunchbase.com/organization/sentry
+          - item:
+            name: Zabbix
+            homepage_url: https://www.zabbix.com/
+            repo_url: https://github.com/zabbix/zabbix
+            logo: zabbix.svg
+            crunchbase: https://www.crunchbase.com/organization/zabbix
+          - item:
+            name: OpenTelemetry
+            homepage_url: https://opentelemetry.io/
+            project: loved
+            repo_url: https://github.com/open-telemetry/opentelemetry-java
+            logo: open-telemetry.svg
+            twitter: https://twitter.com/opentelemetry
+            crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            extra:
+              accepted: "2019-05-07"
+              incubating: "2021-08-26"
+              dev_stats_url: https://opentelemetry.devstats.cncf.io/
+              artwork_url: https://github.com/cncf/artwork/blob/master/examples/sandbox.md#opentelemetry-logos
+              slack_url: https://cloud-native.slack.com/messages/opentelemetry
+              gitter_url: https://gitter.im/open-telemetry/community
+              specification: true
+              chat_channel: "#opentelemetry"
+              summary_personas: Developers, SREs, Platform Engineers, DevOps
+              summary_tags: monitoring, observability, tracing, metrics, logs
+              summary_use_case: Enabling built-in observability for cloud-native systems.
+              summary_business_use_case:
+                OpenTelemetry makes performance telemetry for observability
+                a built-in feature of cloud-native systems. It provides a standard set of
+                APIs, SDKs, data models, and tooling to create and capture this telemetry
+                data, then export it to a variety of open source or commercial analysis
+                backends.
+              summary_release_rate: monthly
+              summary_integrations: Prometheus, Jaeger, [and many more.](https://opentelemetry.io/ecosystem/)
+              summary_intro_url: https://opentelemetry.io/ecosystem/demo/
+              clomonitor_name: open-telemetry
+      - subcategory:
+        name: Feature Flagging
+        items: []
+      - subcategory:
+        name: Logging
+        items:
+          - item:
+            name: Elastic
+            homepage_url: https://www.elastic.co/
+            repo_url: https://github.com/elastic/elasticsearch
+            logo: elastic.svg
+            open_source: false
+            crunchbase: https://www.crunchbase.com/organization/elasticsearch
+          - item:
+            name: Fluentd
+            homepage_url: https://www.fluentd.org/
+            project: graduated
+            repo_url: https://github.com/fluent/fluentd
+            logo: fluentd.svg
+            twitter: https://twitter.com/fluentd
+            crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            extra:
+              accepted: "2016-11-08"
+              incubating: "2016-11-08"
+              graduated: "2019-04-11"
+              cncf_tags:
+                - https://github.com/cncf/tag-observability
+              dev_stats_url: https://fluentd.devstats.cncf.io/
+              artwork_url: https://github.com/cncf/artwork/blob/master/examples/graduated.md#fluentd-logos
+              stack_overflow_url: https://stackoverflow.com/questions/tagged/fluentd
+              blog_url: http://www.fluentd.org/blog/
+              slack_url: http://slack.fluentd.org/
+              clomonitor_name: fluentd
+              audits:
+                - date: "2019-05-01"
+                  type: security
+                  url: https://cure53.de/pentest-report_fluent.pdf
+                  vendor: Cure53
+                - date: "2020-12-15"
+                  type: fuzzing
+                  url: https://github.com/fluent/fluent-bit/blob/master/doc-reports/cncf-fuzzing-audit.pdf
+                  vendor: Ada Logics
+          - item:
+            name: Graylog
+            homepage_url: https://www.graylog.org/
+            repo_url: https://github.com/Graylog2/graylog2-server
+            logo: graylog.svg
+            open_source: false
+            crunchbase: https://www.crunchbase.com/organization/graylog
+          - item:
+            name: Logstash
+            homepage_url: https://www.elastic.co/logstash
+            repo_url: https://github.com/elastic/logstash
+            logo: logstash.svg
+            crunchbase: https://www.crunchbase.com/organization/elasticsearch
+          - item:
+            name: Splunk
+            homepage_url: https://www.splunk.com/
+            logo: splunk.svg
+            crunchbase: https://www.crunchbase.com/organization/splunk
+      - subcategory:
+        name: Tracing
+        items:
+          - item:
+            name: Elastic APM
+            homepage_url: https://www.elastic.co/observability/application-performance-monitoring
+            repo_url: https://github.com/elastic/apm-server
+            logo: elastic-apm.svg
+            crunchbase: https://www.crunchbase.com/organization/elasticsearch
+          - item:
+            name: Jaeger
+            homepage_url: https://www.jaegertracing.io/
+            project: graduated
+            repo_url: https://github.com/jaegertracing/jaeger
+            logo: jaeger.svg
+            twitter: https://twitter.com/JaegerTracing
+            crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            extra:
+              accepted: "2017-09-13"
+              incubating: "2017-09-13"
+              graduated: "2019-10-31"
+              cncf_tags:
+                - https://github.com/cncf/tag-observability
+              dev_stats_url: https://jaeger.devstats.cncf.io/
+              artwork_url: https://github.com/cncf/artwork/blob/master/examples/incubating.md#jaeger-logos
+              stack_overflow_url: https://stackoverflow.com/questions/tagged/jaeger
+              blog_url: https://medium.com/jaegertracing/
+              mailing_list_url: https://groups.google.com/forum/#!forum/jaeger-tracing
+              slack_url: https://slack.cncf.io/
+              chat_channel: "#jaeger"
+              summary_personas: Developers, SREs, Platform Engineers, Network Engineers
+              summary_tags: monitoring, observability, tracing
+              summary_use_case: tracing-based observability for distributed systems
+              summary_business_use_case:
+                Monitoring and troubleshooting distributed workflows;
+                root cause localization; understanding service dependncies; latency and
+                performance optimization.
+              summary_release_rate: monthly
+              summary_integrations: OpenTelemetry, Prometheus, multiple [storage backends](https://www.jaegertracing.io/docs/latest/deployment/#span-storage-backends).
+              summary_intro_url:
+              clomonitor_name: jaeger
+              audits:
+                - date: "2019-05-04"
+                  type: security
+                  url: https://github.com/jaegertracing/security-audits/blob/master/SECURITY_AUDIT_2019_05_04.pdf
+                  vendor: Cure53
+          - item:
+            name: OpenTelemetry
+            homepage_url: https://opentelemetry.io/
+            project: incubating
+            repo_url: https://github.com/open-telemetry/opentelemetry-java
+            logo: open-telemetry.svg
+            twitter: https://twitter.com/opentelemetry
+            crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            extra:
+              accepted: "2019-05-07"
+              incubating: "2021-08-26"
+              dev_stats_url: https://opentelemetry.devstats.cncf.io/
+              artwork_url: https://github.com/cncf/artwork/blob/master/examples/sandbox.md#opentelemetry-logos
+              slack_url: https://cloud-native.slack.com/messages/opentelemetry
+              gitter_url: https://gitter.im/open-telemetry/community
+              specification: true
+              chat_channel: "#opentelemetry"
+              summary_personas: Developers, SREs, Platform Engineers, DevOps
+              summary_tags: monitoring, observability, tracing, metrics, logs
+              summary_use_case: Enabling built-in observability for cloud-native systems.
+              summary_business_use_case:
+                OpenTelemetry makes performance telemetry for observability
+                a built-in feature of cloud-native systems. It provides a standard set of
+                APIs, SDKs, data models, and tooling to create and capture this telemetry
+                data, then export it to a variety of open source or commercial analysis
+                backends.
+              summary_release_rate: monthly
+              summary_integrations: Prometheus, Jaeger, [and many more.](https://opentelemetry.io/ecosystem/)
+              summary_intro_url: https://opentelemetry.io/ecosystem/demo/
+              clomonitor_name: open-telemetry
+          - item:
+            name: Zipkin
+            homepage_url: https://zipkin.io/
+            repo_url: https://github.com/openzipkin/zipkin
+            logo: zipkin.svg
+            twitter: https://twitter.com/zipkinproject
+            crunchbase: https://www.crunchbase.com/organization/zipkin
+      - subcategory:
+        name: Chaos Engineering
+        items:
+          - item:
+            name: Gremlin
+            homepage_url: https://www.gremlin.com/
+            logo: gremlin.svg
+            twitter: https://twitter.com/GremlinInc
+            crunchbase: https://www.crunchbase.com/organization/gremlin-inc
+      - subcategory:
+        name: Continuous Optimization
+        items: []
+      - subcategory:
+        name: FinOps
+        items: []
+      - subcategory:
+        name: Sustainability
+        items:
+          - item:
+            name: Cloud Carbon Footprint
+            description: Cloud Carbon Footprint is a tool to estimate energy use (kilowatt-hours) and carbon emissions (metric tons CO2e) from public cloud usage
+            homepage_url: https://cloudcarbonfootprint.org/
+            repo_url: https://github.com/cloud-carbon-footprint/cloud-carbon-footprint
+            logo: cloud-carbon-footprint.svg
+          - item:
+            name: Scaphandre
+            description: Energy consumption metrology agent. Let "scaph" dive and bring back the metrics that will help you make your systems and applications more sustainable !
+            homepage_url: https://sustainable-computing.io/
+            repo_url: https://github.com/hubblo-org/scaphandre
+            logo: scaphandre.svg
+          - item:
+            name: Kepler
+            description: Kepler (Kubernetes-based Efficient Power Level Exporter) uses eBPF to probe energy related system stats and exports as Prometheus metrics.
+            homepage_url: https://sustainable-computing.io/
+            project: sandbox
+            repo_url: https://github.com/sustainable-computing-io/kepler
+            logo: kepler.svg
+            crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            extra:
+              accepted: '2023-05-17'
+              dev_stats_url: https://kepler.devstats.cncf.io/
+              summary_personas: Developers, SREs, Sustainability Officers, IT Managers
+              summary_tags: sustainability, power monitoring, observability, metrics, ebpf, machine learning
+              summary_use_case: Enabling workload power monitoring for cloud-native systems.
+              summary_integrations: Kubernetes, Prometheus.
+  - category:
+    name: Special
+    subcategories:
+      - subcategory:
+        name: Kubernetes Certified Service Provider
+        items: []
+      - subcategory:
+        name: Kubernetes Training Partner
+        items: []
+      - subcategory:
+        name: Certified CNFs
+        items: []
+  - category:
+    name: CNCF Members
+    subcategories:
+      - subcategory:
+        name: Platinum
+        items: []
+      - subcategory:
+        name: Gold
+        items: []
+      - subcategory:
+        name: Silver
+        items: []
+      - subcategory:
+        name: Academic
+        items: []
+      - subcategory:
+        name: Nonprofit
+        items: []
+      - subcategory:
+        name: End User Supporter
+        items: []
+  - category:
+    name: Wasm
+    subcategories:
+      - subcategory:
+        name: Languages
+        items: []
+      - subcategory:
+        name: Runtimes
+        items: []
+      - subcategory:
+        name: Application Frameworks
+        items: []
+      - subcategory:
+        name: Edge/Bare metal
+        items: []
+      - subcategory:
+        name: AI/Machine Learning
+        items: []
+      - subcategory:
+        name: Embedded Functions
+        items:
+          - item:
+            name: Envoy (Wasm)
+            homepage_url: https://www.envoyproxy.io
+            repo_url: https://github.com/envoyproxy/envoy
+            logo: envoy.svg
+            crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            allow_duplicate_repo: true
+      - subcategory:
+        name: Tooling
+        items: []
+      - subcategory:
+        name: Orchestration & Management
+        items: []
+      - subcategory:
+        name: Hosted Platforms
+        items: []
+      - subcategory:
+        name: Decentralized Platforms
+        items: []
+      - subcategory:
+        name: Debugging & Observability
+        items: []
+      - subcategory:
+        name: Packaging, Registries & Application Delivery
+        items: []
+  - category:
+    name: Test
+    subcategories:
+      - subcategory:
+        name: Load
+        items:
+          - item:
+            name: k6
+            description:
+              k6 is a developer-centric, free and open-source load testing tool
+              built for making performance testing a productive and enjoyable experience.
+              Using k6, you'll be able to catch performance regression and problems earlier,
+              allowing you to build resilient systems and robust applications.
+            homepage_url: https://k6.io
+            repo_url: https://github.com/grafana/k6
+            logo: k6.svg
+            twitter: https://twitter.com/k6_io
+            crunchbase: https://www.crunchbase.com/organization/raintank
+          - item:
+            name: Gatling
+            description:
+              Gatling is a load test tool. It officially supports HTTP, WebSocket, Server-Sent-Events and JMS.
+            homepage_url: https://gatling.io
+            repo_url: https://github.com/gatling/gatling
+            logo: gatling.svg
+            twitter: https://twitter.com/GatlingTool
+            crunchbase: https://www.crunchbase.com/organization/gatling-corp
+      - subcategory:
+        name: UI
+        items:
+          - item:
+            name: Cypress
+            description:
+              With Cypress, you can easily create tests for your modern web applications, debug them visually, and automatically run them in your continuous integration builds.
+            homepage_url: https://www.cypress.io
+            repo_url: https://github.com/cypress-io/cypress
+            logo: cypress.svg
+            twitter: https://twitter.com/Cypress_io
+            crunchbase: https://www.crunchbase.com/organization/cypress-io
+  - category:
+    name: Cloud
+    subcategories:
+      - subcategory:
+        name: Providers
+        items:
+          - item:
+            name: Amazon Web Services
+            description: 
+            homepage_url: https://aws.amazon.com/ 
+            repo_url: https://github.com/aws
+            logo: aws.svg
+            twitter: https://twitter.com/aws
+            crunchbase: https://www.crunchbase.com/organization/amazon-web-services
+          - item:
+            name: Google Cloud Platform
+            description:
+            homepage_url: https://cloud.google.com/
+            repo_url: https://github.com/GoogleCloudPlatform
+            logo: gcp.svg
+            twitter: https://twitter.com/GoogleCloud_FR
+            crunchbase: https://www.crunchbase.com/organization/google-cloud-platform
+          - item:
+            name: Azure
+            description:
+            homepage_url: https://azure.microsoft.com/
+            repo_url: https://github.com/Azure
+            logo: azure.svg
+            twitter: https://twitter.com/Azure_France
+            crunchbase: https://www.crunchbase.com/organization/azure
+          - item:
+            name: OVH Cloud
+            description:
+            homepage_url: https://www.ovhcloud.com/
+            repo_url: https://github.com/ovh
+            logo: ovhcloud.svg
+            twitter: https://twitter.com/OVHcloud_FR
+            crunchbase: https://www.crunchbase.com/organization/ovh-com
+          - item:
+            name: Outscale
+            description:
+            homepage_url: https://outscale.com/
+            repo_url: https://github.com/outscale
+            logo: outscale.svg
+            twitter: https://twitter.com/outscale_fr
+            crunchbase: https://www.crunchbase.com/organization/outscale
+          - item:
+            name: Scaleway
+            description:
+            homepage_url: https://www.scaleway.com/
+            repo_url: https://github.com/scaleway/
+            logo: scaleway.svg
+            twitter: https://twitter.com/Scaleway_fr
+            crunchbase: https://www.crunchbase.com/organization/scaleway
+      - subcategory:
+        name: DBaaS
+        items:
+          - item:
+            name: Aiven
+            description: 
+            homepage_url: https://aiven.io/
+            repo_url: https://github.com/aiven
+            logo: aiven.svg
+            twitter: https://twitter.com/aiven_io
+            crunchbase: https://www.crunchbase.com/organization/aiven
+          - item:
+            name: MongoDB Atlas
+            description: 
+            homepage_url: https://www.mongodb.com/fr-fr/atlas/database
+            repo_url: https://github.com/mongodb
+            logo: mongo-atlas.svg
+            twitter: https://twitter.com/MongoDB
+            crunchbase: https://www.crunchbase.com/organization/mongodb-inc

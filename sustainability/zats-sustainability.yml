@@ -1,0 +1,175 @@
+landscape:
+  - category:
+    name: Documentation
+    subcategories:
+      - subcategory:
+        name: Public and Governemental organizations
+        items:
+          - item:
+            name: Ademe
+            #project: loved
+            description: L'Agence de l'environnement et de la maîtrise de l'énergie (Ademe) est un établissement public à caractère industriel et commercial français créé en 1991. L'Ademe suscite, anime, coordonne, facilite ou réalise des opérations de protection de l'environnement et la maîtrise de l'énergie. Actrice du développement durable, l'Ademe participe à la mise en œuvre des politiques publiques en matière d'énergie et de protection de l'environnement.
+            homepage_url: https://agirpourlatransition.ademe.fr/
+            logo: ademe.svg
+            twitter: https://twitter.com/ademe
+            crunchbase: https://www.crunchbase.com/organization/ademe
+          - item:
+            name: Green Web Foundation
+            description: La Green Web Foundation est une organisation indépendante à but non lucratif qui surveille l'énergie verte utilisée pour Internet. Elle gère l’impact environnemental de vos produits numériques. Elle applique les meilleures pratiques en matière de durabilité numérique et plaide pour un Internet plus durable et plus juste.
+            homepage_url: https://www.thegreenwebfoundation.org/
+            logo: greenweb-foundation.svg
+            #twitter:
+            crunchbase: https://www.crunchbase.com/organization/the-green-web-foundation
+          - item:
+            name: Institut du numérique responsable
+            description: L'Institut du numérique responsable (INR) est une association française constituée en 2018. Elle regroupe des entreprises et des organisations qui y partagent et promeuvent des expériences pour un numérique respectueux de l'environnement, inclusif, solidaire et éthique.
+            homepage_url: https://institutnr.org/
+            logo: inrc.svg
+      - subcategory:
+        name: Referentials and books
+        items:
+          - item:
+            name: Référentiel général d'écoconception de services numériques (RGESN)
+            description:
+              Ce document s’appuie en particulier sur les travaux antérieurs de la mission interministérielle Numérique
+              écoresponsable (MiNumEco) menée par la DINUM et l’ADEME, en collaboration avec le ministère de la
+              Transition écologique et l’Institut du numérique responsable. Il tient aussi compte des publications
+              antérieures sur l’écoconception des services numériques. L’ambition est d’établir un référentiel général sur
+              l’écoconception des services numériques unique par la puissance publique, socle commun de bonnes
+              pratiques pour la conception de services numériques soutenables..
+            homepage_url: https://ecoresponsable.numerique.gouv.fr/publications/referentiel-general-ecoconception/
+            logo: referentials-generic-blue.svg
+          - item:
+            name: Collectif Conception Numérique Responsable
+            description:
+              GreenIT.fr, avec le soutien de plus de 40 contributeurs membres du Collectif conception numérique responsable, a mis au point un référentiel de 115 bonnes pratiques d'éco-conception web. Publié sous un livre dédié à l'écoconception web et sous la forme d'une check-list gratuite publiée sous licence CC-By-NC-ND, ce référentiel est utilisé par l'ensemble des professionnels du web qui cherchent à réduire les impacts environnementaux de leurs services en ligne, sites web et applications mobiles. Vous pouvez aussi le retrouver sous la forme de fiches.
+            repo_url: https://github.com/cnumr/best-practices
+            homepage_url: https://collectif.greenit.fr/
+            #reuse of green it logo, no other svg available
+            logo: greenit.svg
+          - item:
+            name: Guide de Référence de Conception Responsable de Services Numériques (GR491)
+            description:
+              Le Guide de Référence de Conception Responsable de Services Numériques (GR491) proposé par l’INR, donne un cadre à toutes les organisations qui souhaitent s’engager sur le sujet et agir pour un numérique plus responsable.
+            homepage_url: https://gr491.isit-europe.org
+            logo: referentials-generic-yellow.svg
+      - subcategory:
+        name: Certifications
+        items:
+          - item:
+            name: Green Software for practitioners
+            description:
+              Green Software for practitioners (LFC131) is a certification about Learning the basic concepts a software practitioner needs to know to build, maintain and run greener applications..
+            homepage_url: https://trainingportal.linuxfoundation.org/courses/green-software-for-practitioners-lfc131
+            #project: loved
+            logo: linux-foundation.svg
+            twitter: https://twitter.com/linuxfoundation
+            crunchbase: https://www.crunchbase.com/organization/linux-foundation
+            extra:
+              summary_personas: Developers, Architects, OPS
+              summary_tags: Certification, GSF
+              summary_use_case: |-
+                In 2019 the original eight principles of green software engineering were released. This 2022 update of the principles took on feedback received over the years, merging some principles and adding a new one regarding understanding climate commitments.
+              summary_business_use_case: |-
+                The following training covers 6 key areas that a green software practitioner should know: Carbon Efficiency, Energy Efficiency, Carbon Awareness, Hardware Efficiency, Measurement and Climate Commitments.
+          - item:
+            name: Green-it certification
+            description:
+              La certification Green IT et numérique responsable atteste du niveau de maîtrise de la méthodologie, des bonnes pratiques, du vocabulaire et des connaissances fondamentales associées aux pratiques de sobriété numérique, de Green IT et de numérique responsable (hors IT for Green).
+            homepage_url: https://www.greenit.fr/certification-numerique-responsable/
+            #project: loved
+            logo: greenit.svg
+            twitter: https://twitter.com/greenit
+            extra:
+              summary_personas: Developers, Architects, OPS
+              summary_tags: Certification, greenit
+              summary_use_case: |-
+                In 2019 the original eight principles of green software engineering were released. This 2022 update of the principles took on feedback received over the years, merging some principles and adding a new one regarding understanding climate commitments.
+              summary_business_use_case: |-
+                The following training covers 6 key areas that a green software practitioner should know: Carbon Efficiency, Energy Efficiency, Carbon Awareness, Hardware Efficiency, Measurement and Climate Commitments.
+      - subcategory:
+        name: Label
+        items:
+          - item:
+            name: Ecovadis
+            description: |-
+              EcoVadis propose un service d’évaluation complet de la Responsabilité Sociétale des Entreprises (RSE), via une plateforme SaaS globale.
+            homepage_url: https://ecovadis.com/fr/
+            #repo_url:
+            logo: ecovadis.svg
+            twitter: https://twitter.com/ecovadis
+            crunchbase: https://www.crunchbase.com/organization/ecovadis
+  - category:
+    name: Tools
+    subcategories:
+      - subcategory:
+        name: Web footprint calculator
+        items:
+          - item:
+            name: Ecoindex
+            description: |-
+              À l’origine, EcoIndex.fr est un service en ligne conçu et proposé par Frédéric Bordage (GreenIT.fr) et réalisé par Gwenael Chailleu et Thomas Samain de la société Nxtweb. Par la suite, de nombreux·ses contributeur·ices bénévoles ont participé aux évolutions et améliorations de l’outil, devenu un projet collectif et ouvert à tous·tes.
+            homepage_url: https://www.ecoindex.fr/
+            repo_url: https://github.com/cnumr/Ecoindex/
+            logo: collectif-conception-numerique-responsable-logo.svg
+            twitter: https://twitter.com/containerd
+          - item:
+            name: Website Carbon Calculator
+            description: |-
+              WebsiteCarbon.com is a project of Wholegrain Digital (Scamper Ltd) aimed at helping to raise awareness of the environmental impact of the web and provide practical advice on how to create a greener web.
+            homepage_url: https://www.websitecarbon.com/
+            repo_url : https://gitlab.com/wholegrain/website-carbon-badges/
+            logo: websiteCarbon.svg
+            crunchbase: https://www.crunchbase.com/organization/wholegrain-digital
+          - item:
+            name: Ecograder
+            description: |-
+              Ecograder utilizes CO2.js from The Green Web Foundation, as well as Google Lighthouse's open source page metrics, to identify tasks that will improve your website.
+            homepage_url: https://ecograder.com/
+            logo: ecograder.svg
+            crunchbase: https://www.crunchbase.com/organization/mightybytes
+      - subcategory:
+        name: Framework and portals
+        items:
+          - item:
+            name: Impact Framework
+            project: loved
+            description:
+            homepage_url: https://if.greensoftware.foundation/
+            repo_url: https://github.com/Green-Software-Foundation/if
+            logo: if-framework.svg
+          - item:
+            name: Cloud Carbon Footprint
+            description: Cloud Carbon Footprint is a tool to estimate energy use (kilowatt-hours) and carbon emissions (metric tons CO2e) from public cloud usage
+            homepage_url: https://cloudcarbonfootprint.org/
+            repo_url: https://github.com/cloud-carbon-footprint/cloud-carbon-footprint
+            logo: cloud-carbon-footprint.svg
+      - subcategory:
+        name: System tools (draft)
+        items:
+          - item:
+            name: Scaphandre
+            description: Energy consumption metrology agent. Let "scaph" dive and bring back the metrics that will help you make your systems and applications more sustainable !
+            homepage_url: https://sustainable-computing.io/
+            repo_url: https://github.com/hubblo-org/scaphandre
+            logo: scaphandre.svg
+          - item:
+            name: DailyClean
+            description: Daily clean is all you to turn on or off automatically or manually all your pods your kubernetes namespace. Save the planet with DailyClean. Daily clean only use kubernetes native API.
+            homepage_url: https://github.com/AxaFrance/dailyclean
+            repo_url: https://github.com/AxaFrance/dailyclean
+            logo: axa.svg
+          - item:
+            name: Kepler
+            description: Kepler (Kubernetes-based Efficient Power Level Exporter) uses eBPF to probe energy related system stats and exports as Prometheus metrics.
+            homepage_url: https://sustainable-computing.io/
+            repo_url: https://github.com/sustainable-computing-io/kepler
+            logo: kepler.svg
+            crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+            extra:
+              accepted: '2023-05-17'
+              dev_stats_url: https://kepler.devstats.cncf.io/
+              summary_personas: Developers, SREs, Sustainability Officers, IT Managers
+              summary_tags: sustainability, power monitoring, observability, metrics, ebpf, machine learning
+              summary_use_case: Enabling workload power monitoring for cloud-native systems.
+              summary_integrations: Kubernetes, Prometheus.

@@ -1,0 +1,44 @@
+# Landscape2 guide
+#
+# This file allows defining the content of the landscape guide.
+#
+# The landscape guide is organized into categories and subcategories. Each of
+# these entities requires a name and some content. The content can be provided
+# in markdown format. Categories and subcategories names are not required to
+# match the ones defined in the landscape data file but, when they do, those
+# categories/subcategories will be enriched with some extra information. So
+# whenever possible, it's highly recommended that they do.
+#
+# We recommend using headings of level 4-6 within the content blocks as levels
+# 1-3 are reserved to illustrate the hierarchy of categories and subcategories.
+
+categories:
+  - category: "Documentation"
+    content: |
+      This category describes all referentials and guides related to eco conception.
+
+    subcategories:
+      - subcategory: "Referentials"
+        content: |
+          Il existe de nombreux référentiels.
+
+      - subcategory: "Certifications"
+        content: |
+          Les certifications permettant de valider des aptitudes à concevoir des solutions numérique écoresponsable.
+      - subcategory: "Public and Governemental organizations"
+        content: |
+          L'ensemble des associations ou organisations qui œuvrent pour allier numérique et éco responsabilité. 
+
+  - category: "Tools"
+    content: |
+      Il est nécessaire d'avoir des outils (librairies, portails...) pour mesurer l'impact des solutions hardware et software et de comparer dans le temps ces mesures.
+
+    subcategories:
+      - subcategory: "Web footprint calculator"
+        content: |
+          Les outils de mesure d'application "client-side".
+
+      - subcategory: "System tools (draft)"
+        content: |
+          Les outils de mesures des systèmes physiques, virtuels ou conteneurisés.
+

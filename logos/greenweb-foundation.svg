@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="65"
+   height="73"
+   viewBox="0 0 109.21788 73"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="greenweb-foundation.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2"
+     inkscape:cx="147"
+     inkscape:cy="58.5"
+     inkscape:window-width="1592"
+     inkscape:window-height="937"
+     inkscape:window-x="0"
+     inkscape:window-y="1385"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1" />
+  <title
+     id="title1">TGWF-logo</title>
+  <g
+     id="Page-1"
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd"
+     transform="translate(0.84013752,-21.843507)">
+    <g
+       id="TGWF-logo"
+       transform="translate(0.79,0.71)"
+       fill-rule="nonzero">
+      <path
+         d="m 1.83,63.14 v 1.59 c 0,28.42 23.12,51.53 51.53,51.53 28.41,0 51.53,-23.12 51.53,-51.53 v -1.59 z"
+         id="Path"
+         fill="#ffffff" />
+      <path
+         d="m 0,62.2 v 1.64 c 0,29.31 23.84,53.15 53.15,53.15 29.31,0 53.15,-23.84 53.15,-53.15 V 62.2 Z m 51.51,28.17 v 23.14 C 45.4,112.15 37.99,103.51 33.4,90.37 Z M 32.35,87.09 C 30.46,80.7 29.25,73.41 29.12,65.48 h 22.39 v 21.61 z m 22.43,26.4 V 90.37 h 17.88 c -1.16,3.21 -2.52,6.28 -4.08,9.15 -4.17,7.65 -9.41,12.88 -13.8,13.97 z m 0,-26.4 V 65.48 h 22.39 c -0.14,7.44 -1.31,14.8 -3.4,21.61 z M 25.84,65.48 c 0.13,7.74 1.28,15.06 3.15,21.61 H 9.05 C 5.5128638,80.418465 3.5461901,73.027192 3.3,65.48 h 22.55 z m -14.9,24.89 h 19.07 c 3.33,9.97 8.29,17.89 13.58,22.42 C 29.87,110.12 18.15,101.81 10.94,90.37 Z m 51.54,22.46 c 5.28,-4.55 10.26,-12.54 13.65,-22.46 H 95.37 C 88.12,101.87 76.3,110.2 62.49,112.83 Z M 97.25,87.09 H 77.16 C 79.1,80.48 80.3,73.14 80.45,65.48 h 22.54 c -0.24137,7.547902 -2.20833,14.940245 -5.75,21.61 z"
+         id="Shape"
+         fill="#000000" />
+      <polygon
+         id="polygon1"
+         fill="#00ff00"
+         points="21.71,13.22 15.37,17.87 41.43,53.4 4.33,39.77 1.62,47.15 42.6,62.2 64.11,62.2 104.61,47.33 101.9,39.95 64.68,53.62 91.32,17.89 85.02,13.2 57.29,50.39 57.29,0 49.43,0 49.43,51.03 " />
+    </g>
+  </g>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>TGWF-logo</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

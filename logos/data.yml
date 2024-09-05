@@ -1,0 +1,712 @@
+landscape:
+- category: null
+  name: Provisioning
+  subcategories:
+  - subcategory: null
+    name: Automation & Configuration
+    items:
+    - {item: null, name: Airship, homepage_url: 'https://www.airshipit.org/', repo_url: 'https://github.com/airshipit/treasuremap',
+      logo: airship.svg, twitter: 'https://twitter.com/airshipproject', crunchbase: 'https://www.crunchbase.com/organization/open-infrastructure-foundation'}
+    - item: null
+      name: Akri
+      homepage_url: https://docs.akri.sh
+      project: sandbox
+      repo_url: https://github.com/project-akri/akri
+      logo: akri.svg
+      twitter: https://twitter.com/ProjectAkri
+      crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+      extra: {accepted: '2021-09-14', annual_review_date: '2023-06-13', annual_review_url: 'https://github.com/cncf/toc/pull/1080',
+        dev_stats_url: 'https://akri.devstats.cncf.io/', blog_url: 'https://medium.com/akri',
+        artwork_url: 'https://github.com/cncf/artwork/blob/master/examples/sandbox.md#akri-logos',
+        slack_url: 'https://kubernetes.slack.com/messages/C01D9L7QE8Z', chat_channel: '#akri',
+        clomonitor_name: akri}
+  - subcategory: null
+    name: Container Registry
+    items:
+    - item: null
+      name: Alibaba Cloud Container Registry (ACR)
+      description: |-
+        Alibaba Cloud Container Registry (ACR) is a cloud-native artifacts management platform that helps your team build, manage, and ship containerized applications,
+         also provides vulnerability analysis, global synchronization, content trust, and more functionalities out of the box.
+      homepage_url: https://www.alibabacloud.com/zh/product/container-registry
+      logo: alibaba-cloud-container-registry.svg
+      crunchbase: https://www.crunchbase.com/organization/alibaba-cloud
+    - {item: null, name: Amazon Elastic Container Registry (ECR), description: 'Amazon
+        Elastic Container Registry (ECR) is a fully-managed Docker container registry
+        that makes it easy for developers to store, manage, and deploy Docker container
+        images.', homepage_url: 'https://aws.amazon.com/ecr/', logo: amazon-ecr.svg,
+      crunchbase: 'https://www.crunchbase.com/organization/amazon-web-services'}
+  - subcategory: null
+    name: Security & Compliance
+    items:
+    - {item: null, name: Airlock, homepage_url: 'https://www.airlock.com/', logo: airlock.svg,
+      crunchbase: 'https://www.crunchbase.com/organization/airlock-security-innovation-by-ergon-informatik-ag'}
+    - {item: null, name: Alcide, description: Alcide provides dev-to-production security
+        for workloads running in Kubernetes & Istio, homepage_url: 'https://github.com/alcideio',
+      logo: alcide.svg, crunchbase: 'https://www.crunchbase.com/organization/alcide'}
+  - subcategory: null
+    name: Key Management
+    items:
+    - item: null
+      name: Athenz
+      description: Open source platform for X.509 certificate based service authentication
+        and fine grained access control in dynamic infrastructures
+      homepage_url: https://www.athenz.io
+      project: sandbox
+      repo_url: https://github.com/AthenZ/athenz
+      logo: athenz.svg
+      twitter: https://twitter.com/athenzio
+      crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+      extra: {accepted: '2021-01-26', annual_review_url: 'https://github.com/cncf/toc/pull/1106',
+        annual_review_date: '2023-06-30', dev_stats_url: 'https://athenz.devstats.cncf.io/',
+        artwork_url: 'https://github.com/cncf/artwork/tree/master/projects/athenz',
+        slack_url: 'https://athenz.slack.com/', clomonitor_name: athenz}
+    - {item: null, name: Authing, homepage_url: 'https://www.authing.cn', repo_url: 'https://github.com/Authing/Authing',
+      logo: authing.svg, crunchbase: 'https://www.crunchbase.com/organization/authing'}
+- category: null
+  name: Runtime
+  subcategories:
+  - subcategory: null
+    name: Cloud Native Storage
+    items:
+    - {item: null, name: Afi.ai, description: Afi SaaS backup for Kubernetes provides
+        a fully managed cloud service with secure offsite storage and an easy-to-use
+        web UI, homepage_url: 'https://afi.ai/kubernetes-backup', logo: afi.ai.svg,
+      crunchbase: 'https://www.crunchbase.com/organization/afi-ai'}
+    - {item: null, name: Alibaba Cloud File Storage, description: 'Alibaba Cloud File
+        Storage enables you to have a distributed file system with unlimited capacity
+        and performance scaleing with a single namespace,high-performance, high reliability,
+        high availabily and scalable file storage services.', homepage_url: 'https://www.alibabacloud.com/product/nas',
+      logo: alibaba-cloud-file-storage.svg, crunchbase: 'https://www.crunchbase.com/organization/alibaba-cloud'}
+  - subcategory: null
+    name: Container Runtime
+    items:
+    - item: null
+      name: containerd
+      homepage_url: https://containerd.io/
+      project: graduated
+      repo_url: https://github.com/containerd/containerd
+      logo: containerd.svg
+      twitter: https://twitter.com/containerd
+      crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+      allow_duplicate_repo: true
+      extra:
+        accepted: '2017-03-29'
+        incubating: '2017-03-29'
+        graduated: '2019-02-28'
+        cncf_tags: ['https://github.com/cncf/tag-runtime']
+        dev_stats_url: https://containerd.devstats.cncf.io/
+        artwork_url: https://github.com/cncf/artwork/blob/master/examples/graduated.md#containerd-logos
+        stack_overflow_url: https://stackoverflow.com/questions/tagged/containerd
+        slack_url: https://slack.cncf.io/
+        chat_channel: '#containerd'
+        clomonitor_name: containerd
+        audits:
+        - {date: '2023-03-02', type: fuzzing, url: 'https://github.com/containerd/containerd.io/blob/main/static/img/ADA-fuzzing-audit-21-22.pdf',
+          vendor: Ada Logics}
+    - item: null
+      name: CRI-O
+      homepage_url: https://cri-o.io/
+      project: graduated
+      repo_url: https://github.com/cri-o/cri-o
+      logo: cri-o.svg
+      crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+      allow_duplicate_repo: true
+      extra:
+        accepted: '2019-04-08'
+        incubating: '2019-04-08'
+        graduated: '2023-07-19'
+        cncf_tags: ['https://github.com/cncf/tag-runtime']
+        dev_stats_url: https://crio.devstats.cncf.io/
+        artwork_url: https://github.com/cncf/artwork/blob/master/examples/incubating.md#cri-o-logos
+        stack_overflow_url: https://stackoverflow.com/questions/tagged/cri-o
+        blog_url: https://medium.com/cri-o
+        slack_url: https://kubernetes.slack.com/messages/CAZH62UR1
+        clomonitor_name: cri-o
+        audits:
+        - {date: '2022-06-06', type: security, url: 'https://github.com/cri-o/cri-o/blob/main/security/2022_security_audit_adalogics.pdf',
+          vendor: ADA Logics}
+        summary_personas: Cluster Admins, SRE, Platform Architect
+        summary_tags: Container, Image, OCI, CRI, Runtime
+        summary_use_case: |
+          CRI-O is a secure, performant, and stable Container Runtime Interface (CRI) implementation for the Kubelet to orchestrate Open Container Initiative (OCI) containers in production Kubernetes environments. CRI-O's scope is only targeted at Kubernetes, and thus can be performance optimized, rigorously tested and securely tuned for running containers, pods and images in Kubernetes clusters.
+        summary_business_use_case: |
+          CRI-O  is able to tune its behavior to that of the Kubelet, enabling features and performance gains through customization. It is tested against a suite of thousands of tests, including the suite of Kubernetes e2e tests, to ensure compatibility with Kubernetes workloads. It has long had security on the forefront of its design philosophy, enabling new security knobs and reducing the attack surface for the purposes of running containers in production.
+        summary_release_rate: |
+          Every 4 months, released in tandem with Kubernetes minor releases (CRI-O 1.x.y is released soon after Kubernetes 1.x.z).
+        summary_integrations: Kubernetes, runc, crun, youki, Kata containers, CNI,
+          Open Telemetry, Prometheus, sigstore, gRPC
+        summary_intro_url: https://github.com/cri-o/cri-o/blob/main/awesome.md
+  - subcategory: null
+    name: Cloud Native Network
+    items:
+    - item: null
+      name: Antrea
+      homepage_url: https://antrea.io/
+      project: sandbox
+      repo_url: https://github.com/antrea-io/antrea
+      logo: antrea.svg
+      twitter: https://twitter.com/projectantrea
+      crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+      extra: {accepted: '2021-04-28', annual_review_url: 'https://github.com/cncf/toc/pull/871',
+        annual_review_date: '2022-07-07', clomonitor_name: antrea}
+    - {item: null, name: Aviatrix, homepage_url: 'https://www.aviatrix.com/', logo: aviatrix.svg,
+      crunchbase: 'https://www.crunchbase.com/organization/aviatrix'}
+- category: null
+  name: Orchestration & Management
+  subcategories:
+  - subcategory: null
+    name: Scheduling & Orchestration
+    items:
+    - {item: null, name: Amazon Elastic Container Service (ECS), description: 'Amazon
+        Elastic Container Service (Amazon ECS) is a highly scalable, high-performance
+        container orchestration service that supports Docker containers and allows
+        you to easily run and scale containerized applications on AWS.', homepage_url: 'https://aws.amazon.com/ecs/',
+      logo: amazon-ecs.svg, crunchbase: 'https://www.crunchbase.com/organization/amazon-web-services'}
+    - {item: null, name: Apache Mesos, homepage_url: 'https://mesos.apache.org/',
+      repo_url: 'https://github.com/apache/mesos', logo: apache-mesos.svg, twitter: 'https://twitter.com/ApacheMesos',
+      crunchbase: 'https://www.crunchbase.com/organization/apache'}
+  - subcategory: null
+    name: Coordination & Service Discovery
+    items:
+    - {item: null, name: Apache Zookeeper, homepage_url: 'https://zookeeper.apache.org/',
+      repo_url: 'https://github.com/apache/zookeeper', logo: apache-zookeeper.svg,
+      twitter: 'https://twitter.com/ApacheZooKeeper', crunchbase: 'https://www.crunchbase.com/organization/apache'}
+    - {item: null, name: AWS Cloud Map, description: 'AWS Cloud Map is a cloud resource
+        discovery service. With Cloud Map, you can define custom names for your application
+        resources, and it maintains the updated location of these dynamically changing
+        resources. This increases your application availability because your web service
+        always discovers the most up-to-date locations of its resources.', homepage_url: 'https://aws.amazon.com/cloud-map/',
+      logo: aws-cloud-map.svg, crunchbase: 'https://www.crunchbase.com/organization/amazon-web-services'}
+  - subcategory: null
+    name: Remote Procedure Call
+    items:
+    - {item: null, name: Apache bRPC, homepage_url: 'https://brpc.apache.org/', repo_url: 'https://github.com/apache/brpc',
+      logo: apache-brpc.svg, crunchbase: 'https://www.crunchbase.com/organization/apache'}
+    - {item: null, name: Apache Thrift, homepage_url: 'https://thrift.apache.org/',
+      repo_url: 'https://github.com/apache/thrift', logo: apache-thrift.svg, crunchbase: 'https://www.crunchbase.com/organization/apache'}
+  - subcategory: null
+    name: Service Proxy
+    items:
+    - {item: null, name: Avi Networks, description: 'Avi Networks drives automation
+        and intelligence across multi-cloud environments with intent-based application
+        services, including LB and WAF', homepage_url: 'https://avinetworks.com/',
+      logo: avi-networks.svg, twitter: 'https://twitter.com/AviNetworks', crunchbase: 'https://www.crunchbase.com/organization/vmware'}
+    - item: null
+      name: BFE
+      description: Open-source layer 7 load balancer derived from proprietary Baidu
+        FrontEnd
+      homepage_url: https://www.bfe-networks.net
+      project: sandbox
+      repo_url: https://github.com/bfenetworks/bfe
+      logo: bfe.svg
+      twitter: https://twitter.com/BfeNetworks
+      crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+      extra: {accepted: '2020-06-25', annual_review_url: 'https://github.com/cncf/toc/pull/1066',
+        annual_review_date: '2023-06-01', dev_stats_url: 'https://bfe.devstats.cncf.io/',
+        artwork_url: 'https://github.com/cncf/artwork/blob/master/examples/sandbox.md#bfe-logos',
+        clomonitor_name: bfe}
+  - subcategory: null
+    name: API Gateway
+    items:
+    - {item: null, name: 3Scale, homepage_url: 'https://www.3scale.net/', repo_url: 'https://github.com/3scale/apicast',
+      logo: 3-scale.svg, twitter: 'https://twitter.com/3scale', crunchbase: 'https://www.crunchbase.com/organization/red-hat'}
+    - {item: null, name: Akana, homepage_url: 'https://www.akana.com/', logo: akana.svg,
+      twitter: 'https://twitter.com/akanaapi', crunchbase: 'https://www.crunchbase.com/organization/akana',
+      joined: '2021-01-31'}
+  - subcategory: null
+    name: Service Mesh
+    items:
+    - item: null
+      name: Aeraki Mesh
+      description: Aeraki Mesh allows you to manage any layer-7 traffic in a service
+        mesh
+      homepage_url: https://www.aeraki.net/
+      project: sandbox
+      repo_url: https://github.com/aeraki-mesh/aeraki
+      logo: aeraki-mesh.svg
+      crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+      extra: {accepted: '2022-06-17', annual_review_url: 'https://github.com/cncf/toc/pull/1143',
+        annual_review_date: '2023-08-14', dev_stats_url: 'https://aerakimesh.devstats.cncf.io/',
+        blog_url: 'https://www.aeraki.net/blog/', slack_url: 'https://cloud-native.slack.com/messages/aeraki-mesh',
+        summary_personas: 'SREs, DevOps Engineers, Architects', summary_tags: Service
+          Mesh, summary_use_case: 'Aeraki Mesh has been created to provide a non-intrusive,
+          highly extendable way to manage any layer-7 traffic in a service mesh, including
+          Dubbo, Thrift, bRPC, Redis, etc., and private protocols as well.', summary_business_use_case: 'While
+          service mesh becomes an important infrastructure for microservices, many(if
+          not all) service mesh implementations mainly focus on HTTP protocols and
+          treat other protocols as plain TCP traffic. This is an obstacle for a lot
+          of organizations when they try to leverage service mesh''s promised capablities
+          to simplify their microservice development and operation. Aeraki Mesh solve
+          this problem by providing a common layer-7 service mesh framework both in
+          data plane and control plane, which is built on top of Envoy and Istio and
+          can work with them together very well.', summary_release_rate: Every few
+          months, summary_integrations: 'Istio, Envoy', clomonitor_name: aeraki-mesh}
+    - {item: null, name: AWS App Mesh, description: 'AWS App Mesh is a service mesh
+        that provides application-level networking to make it easy for your services
+        to communicate with each other across multiple types of compute infrastructure.
+        App Mesh standardizes how your services communicate, giving you end-to-end
+        visibility and ensuring high-availability for your applications.', homepage_url: 'https://aws.amazon.com/app-mesh/',
+      logo: aws-app-mesh.svg, crunchbase: 'https://www.crunchbase.com/organization/amazon-web-services'}
+- category: null
+  name: App Definition and Development
+  subcategories:
+  - subcategory: null
+    name: Database
+    items:
+    - {item: null, name: Apache CarbonData, homepage_url: 'https://carbondata.apache.org/',
+      repo_url: 'https://github.com/apache/carbondata', logo: carbondata.svg, twitter: 'https://twitter.com/ApacheCarbonDat',
+      crunchbase: 'https://www.crunchbase.com/organization/apache'}
+    - {item: null, name: Apache Hadoop, homepage_url: 'https://hadoop.apache.org/',
+      repo_url: 'https://github.com/apache/hadoop', logo: apache-hadoop.svg, twitter: 'https://twitter.com/twitterhadoop',
+      crunchbase: 'https://www.crunchbase.com/organization/apache'}
+  - subcategory: null
+    name: Streaming & Messaging
+    items:
+    - {item: null, name: Amazon Kinesis, description: 'Amazon Kinesis makes it easy
+        to collect, process, and analyze real-time, streaming data so you can get
+        timely insights and react quickly to new information.', homepage_url: 'https://aws.amazon.com/kinesis/',
+      logo: amazon-kinesis.svg, crunchbase: 'https://www.crunchbase.com/organization/amazon-web-services'}
+    - {item: null, name: Apache Heron, homepage_url: 'https://apache.github.io/incubator-heron/',
+      repo_url: 'https://github.com/apache/incubator-heron', logo: apache-heron.svg,
+      twitter: 'https://twitter.com/heronstreaming', crunchbase: 'https://www.crunchbase.com/organization/apache'}
+    - item:
+      name: CloudEvents
+      description: Standardizing common eventing metadata and their location to help with event identification and routing.
+      homepage_url: https://cloudevents.io/
+      project: incubating
+      repo_url: https://github.com/cloudevents/spec
+      project_org: https://github.com/cloudevents
+      url_for_bestpractices: https://bestpractices.coreinfrastructure.org/en/projects/6770
+      logo: cloud-events.svg
+      twitter: https://twitter.com/cloudeventsio
+      crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+      joined: '2018-05-15'
+      extra:
+       accepted: '2018-05-15'
+       incubating: '2019-10-24'
+       dev_stats_url: https://cloudevents.devstats.cncf.io/
+       artwork_url: https://github.com/cncf/artwork/blob/master/examples/sandbox.md#cloudevents-logos
+       stack_overflow_url: https://stackoverflow.com/questions/tagged/cloudevents
+       slack_url: https://cloud-native.slack.com/messages/cloudevents
+       summary_personas: Developers, Platform engineers
+       summary_tags: events,eventing,serverless
+       summary_use_case: Standardizing common eventing metadata and their location to help with event identification and routing.
+       summary_business_use_case: CloudEvents is a specification for describing event data in common formats to provide interoperability across services, platforms and systems.
+       summary_release_rate: '2019-10-24'
+       summary_integration: Knative, Dapr
+       summary_intro_url: https://github.com/cloudevents/spec/blob/main/cloudevents/primer.md
+       summary_languages: CSharp, Go, Java, Javascript, PHP, PowerShell, Python, Ruby, Rust
+       clomonitor_name: cloudevents
+       audits:
+        - date: '2022-11-28'
+          type: security
+          url: https://ostif.org/wp-content/uploads/2022/11/CloudEvents.pdf
+          vendor: Trail of Bits
+  - subcategory: null
+    name: Application Definition & Image Build
+    items:
+    - {item: null, name: Alibaba Cloud Serverless Workflow, homepage_url: 'https://www.alibabacloud.com/product/serverless-workflow',
+      logo: alibaba_fnf.svg, crunchbase: 'https://www.crunchbase.com/organization/alibaba-cloud'}
+    - item: null
+      name: Artifact Hub
+      homepage_url: https://artifacthub.io/
+      project: sandbox
+      repo_url: https://github.com/artifacthub/hub
+      logo: artifact-hub.svg
+      twitter: https://twitter.com/cncfartifacthub
+      crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+      extra: {accepted: '2020-06-25', annual_review_url: 'https://github.com/cncf/toc/pull/681',
+        annual_review_date: '2021-06-23', dev_stats_url: 'https://artifacthub.devstats.cncf.io/',
+        artwork_url: 'https://github.com/cncf/artwork/blob/master/examples/sandbox.md#artifact-hub-logos',
+        clomonitor_name: artifact-hub}
+  - subcategory: null
+    name: Continuous Integration & Delivery
+    items:
+    - {item: null, name: Agola, description: 'Open Source CI/CD platform with advanced
+        features and architecture. Powerful, reproducible and containerized workflows
+        (called Runs), git based workflow (integrates with all the primary git repositories
+        like GitHub, GitLab, Gitea), restart Runs from failed tasks, user direct runs
+        (test your local changes to a remote Agola server with just one command),
+        distributed and high available by design and runs everywhere (Kubernetes,
+        docker, IaaS, bare metal).', homepage_url: 'https://agola.io', repo_url: 'https://github.com/agola-io/agola',
+      logo: agola.svg, crunchbase: 'https://www.crunchbase.com/organization/sorint-lab'}
+    - {item: null, name: Akuity, description: 'Akuity is the enterprise-grade company
+        for Argo, the open source suite of cloud native application delivery tools.
+        Akuity was founded by                 Argo originators Hong Wang, Jesse Suen
+        and Alexander Matyushentsev, and its mission is to empower DevOps teams to
+        deliver their apps in a               simpler, safer, and faster way. The
+        Akuity Platform provides a best-in-class developer experience with enterprise
+        readiness, and enables                 organizations to modernize their toolchain
+        for the cloud-native era.', homepage_url: 'https://akuity.io', logo: akuity.svg,
+      crunchbase: 'https://www.crunchbase.com/organization/akuity'}
+- category: null
+  name: Platform
+  subcategories:
+  - subcategory: null
+    name: Certified Kubernetes - Distribution
+    items:
+    - {item: null, name: Accordion, description: 'Accordion Kubernetes Platform helps
+        you to orchestrate containerized workloads for your DevOps practices & CI/CD
+        pipelines, delivering enhanced developer productivity and accelerating time
+        to market.', homepage_url: 'https://accordions.co.kr/kube_eng/', logo: mantech-accordion.svg,
+      crunchbase: 'https://www.crunchbase.com/organization/man-technology'}
+    - {item: null, name: Alauda Container Platform (ACP), description: A Cloud-Native
+        Application Platform based on Kubernetes, homepage_url: 'http://www.alauda.cn/product/detail/id/364.html',
+      logo: alauda.svg, crunchbase: 'https://www.crunchbase.com/organization/alauda'}
+  - subcategory: null
+    name: Certified Kubernetes - Hosted
+    items:
+    - {item: null, name: Alibaba Cloud Container Service for Kubernetes, description: Alibaba
+        Cloud Container Service for Kubernetes (ACK) is a fully-managed service compatible
+        with Kubernetes to help users focus on their applications rather than managing
+        container infrastructure., homepage_url: 'https://www.alibabacloud.com/product/kubernetes',
+      logo: alibaba-cloud-container-service-for-kubernetes.svg, crunchbase: 'https://www.crunchbase.com/organization/alibaba-cloud'}
+    - {item: null, name: Amazon Elastic Container Service for Kubernetes (EKS), description: Amazon
+        Elastic Container Service for Kubernetes (Amazon EKS) is a managed service
+        that makes it easy for you to run Kubernetes on AWS without needing to install
+        and operate your own Kubernetes clusters., homepage_url: 'https://aws.amazon.com/eks/',
+      logo: amazon-web-services.svg, crunchbase: 'https://www.crunchbase.com/organization/amazon-web-services'}
+  - subcategory: null
+    name: Certified Kubernetes - Installer
+    items:
+    - {item: null, name: AlviStack Vagrant Box Packaging for Kubernetes, description: This
+        Vagrant Box provides Libvirt and VirtualBox image for running Kubernetes in
+        single node all-in-one mode., homepage_url: 'https://github.com/alvistack/vagrant-kubernetes',
+      repo_url: 'https://github.com/alvistack/vagrant-kubernetes', logo: alvistack.svg,
+      crunchbase: 'https://www.crunchbase.com/organization/pantarei-design-limited'}
+    - {item: null, name: Amazon Elastic Kubernetes Service Anywhere (Amazon EKS Anywhere),
+      description: 'Amazon EKS Anywhere is a new deployment option for Amazon EKS
+        that allows customers to create and operate Kubernetes clusters on customer-managed
+        infrastructure, supported by AWS.', homepage_url: 'https://aws.amazon.com/eks/eks-anywhere',
+      repo_url: 'https://github.com/aws/eks-anywhere', url_for_bestpractices: 'https://github.com/aws/eks-anywhere',
+      logo: amazon-web-services.svg, crunchbase: 'https://www.crunchbase.com/organization/amazon-web-services'}
+  - subcategory: null
+    name: PaaS/Container Service
+    items:
+    - {item: null, name: Akka, homepage_url: 'https://akka.io/', repo_url: 'https://github.com/akka/akka',
+      logo: akka.svg, crunchbase: 'https://www.crunchbase.com/organization/typesafe'}
+    - {item: null, name: Atomist, homepage_url: 'https://atomist.com/', logo: atomist.svg,
+      crunchbase: 'https://www.crunchbase.com/organization/atomist'}
+- category: null
+  name: Serverless
+  subcategories:
+  - subcategory: null
+    name: Security
+    items:
+    - {item: null, name: Prisma Cloud by Palo Alto Networks, homepage_url: 'https://www.paloaltonetworks.com/prisma/cloud',
+      logo: prisma-cloud-palo-alto.svg, crunchbase: 'https://www.crunchbase.com/organization/prisma-cloud'}
+    - {item: null, name: Protego, homepage_url: 'https://www.checkpoint.com', logo: protego.svg,
+      crunchbase: 'https://www.crunchbase.com/organization/protego-labs'}
+  - subcategory: null
+    name: Tools
+    items:
+    - {item: null, name: Cloud Native Landscape, homepage_url: 'https://landscape.cncf.io/',
+      repo_url: 'https://github.com/cncf/landscapeapp', logo: cloud-native-landscape.svg,
+      crunchbase: 'https://www.crunchbase.com/organization/cloud-native-computing-foundation'}
+    - {item: null, name: Dashbird, homepage_url: 'https://dashbird.io/', logo: dashbird.svg,
+      crunchbase: 'https://www.crunchbase.com/organization/dashbird'}
+  - subcategory: null
+    name: Framework
+    items:
+    - {item: null, name: Architect, homepage_url: 'https://arc.codes/docs/en/get-started/quickstart',
+      repo_url: 'https://github.com/architect/functions', logo: architect.svg, crunchbase: 'https://www.crunchbase.com/organization/open-js-foundation'}
+    - {item: null, name: AWS Server Application Model (SAM), homepage_url: 'https://aws.amazon.com/serverless/sam/',
+      repo_url: 'https://github.com/aws/serverless-application-model', logo: aws-sam.svg,
+      crunchbase: 'https://www.crunchbase.com/organization/amazon-web-services'}
+  - subcategory: null
+    name: Hosted Platform
+    items:
+    - {item: null, name: Algorithmia, homepage_url: 'https://algorithmia.com/product',
+      logo: algorithmia.svg, twitter: 'https://twitter.com/algorithmia', crunchbase: 'https://www.crunchbase.com/organization/algorithmia'}
+    - {item: null, name: Alibaba Cloud Function Compute, description: A fully hosted
+        and serverless running environment that takes away the need to manage infrastructure
+        such as servers and enables developers to focus on writing and uploading code.,
+      homepage_url: 'https://www.alibabacloud.com/product/function-compute', logo: alibaba-cloud-function-compute.svg,
+      crunchbase: 'https://www.crunchbase.com/organization/alibaba-cloud'}
+  - subcategory: null
+    name: Installable Platform
+    items:
+    - {item: null, name: Apache Camel K, homepage_url: 'https://camel.apache.org',
+      repo_url: 'https://github.com/apache/camel-k', logo: apache-camel-k.svg, twitter: 'https://twitter.com/apachecamel',
+      crunchbase: 'https://www.crunchbase.com/organization/apache'}
+    - {item: null, name: Apache OpenWhisk, homepage_url: 'https://openwhisk.apache.org/',
+      repo_url: 'https://github.com/apache/openwhisk', logo: apache-openwhisk.svg,
+      twitter: 'https://twitter.com/openwhisk', crunchbase: 'https://www.crunchbase.com/organization/apache'}
+- category: null
+  name: Observability and Analysis
+  subcategories:
+  - subcategory: null
+    name: Monitoring
+    items:
+    - {item: null, name: Alibaba Cloud Application Real-Time Service, description: 'Application
+        Real-Time Monitoring Service (ARMS) is an end-to-end Alibaba Cloud monitoring
+        service for Application Performance Management (APM). You can quickly develop
+        real-time business monitoring capabilities using the frontend monitoring,
+        application monitoring, and custom monitoring features provided by ARMS.',
+      homepage_url: 'https://www.alibabacloud.com/product/arms', logo: alibaba-cloud-application-real-time-service.svg,
+      crunchbase: 'https://www.crunchbase.com/organization/alibaba-cloud'}
+    - {item: null, name: Amazon CloudWatch, description: 'Amazon CloudWatch is a monitoring
+        and management service built for developers, system operators, site reliability
+        engineers (SRE), and IT managers. CloudWatch provides you with data and actionable
+        insights to monitor your applications, understand and respond to system-wide
+        performance changes, optimize resource utilization, and get a unified view
+        of operational health.', homepage_url: 'https://aws.amazon.com/cloudwatch/',
+      logo: amazon-cloudwatch.svg, crunchbase: 'https://www.crunchbase.com/organization/amazon-web-services'}
+  - subcategory: null
+    name: Feature Flagging
+    items:
+    - {item: null, name: DevCycle, homepage_url: 'https://devcycle.com', logo: devcycle.svg,
+      crunchbase: 'https://www.crunchbase.com/organization/devcycle'}
+    - item: null
+      name: Flagsmith
+      homepage_url: https://www.flagsmith.com/
+      repo_url: https://github.com/Flagsmith/flagsmith
+      logo: flagsmith.svg
+      crunchbase: https://www.crunchbase.com/organization/bullet-train
+      extra: {slack_url: 'https://discord.gg/hFhxNtXzgm', blog_url: 'https://www.flagsmith.com/blog',
+        youtube_url: 'https://www.youtube.com/channel/UCki7GZrOdZZcsV9rAIRchCw'}
+  - subcategory: null
+    name: Logging
+    items:
+    - {item: null, name: Alibaba Cloud Log Service, homepage_url: 'https://www.alibabacloud.com/product/log-service',
+      logo: alibaba-cloud-log-service.svg, crunchbase: 'https://www.crunchbase.com/organization/alibaba-cloud'}
+    - {item: null, name: DataSet, homepage_url: 'https://www.dataset.com', logo: dataset.svg,
+      twitter: 'https://twitter.com/dataset_s1', crunchbase: 'https://www.crunchbase.com/organization/scalyr'}
+  - subcategory: null
+    name: Tracing
+    items:
+    - {item: null, name: Aspecto, homepage_url: 'https://www.aspecto.io/', logo: aspecto-logo.svg,
+      crunchbase: 'https://www.crunchbase.com/organization/aspecto'}
+    - {item: null, name: EaseAgent, description: 'EaseAgent is a Javaagent that can
+        be integrated with the mainstream monitoring system, providing standard data
+        formats that are fully compatible with OpenZipkin and Prometheus. EaseAgent
+        is also very easy to extend through the Plugin Mechanism which only a minimum
+        of three interfaces are required to be implemented to complete a plugin development.',
+      homepage_url: 'https://github.com/megaease/easeagent', repo_url: 'https://github.com/megaease/easeagent',
+      logo: easeagent.svg, twitter: 'https://twitter.com/megaease', crunchbase: 'https://www.crunchbase.com/organization/megaease-inc'}
+  - subcategory: null
+    name: Chaos Engineering
+    items:
+    - item: null
+      name: Chaos Mesh
+      homepage_url: https://chaos-mesh.org/
+      project: incubating
+      repo_url: https://github.com/chaos-mesh/chaos-mesh
+      logo: chaos-mesh.svg
+      twitter: https://twitter.com/chaos_mesh
+      crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+      extra: {accepted: '2020-07-14', incubating: '2022-02-16', annual_review_url: 'https://github.com/cncf/toc/pull/944',
+        annual_review_date: '2022-10-18', dev_stats_url: 'https://chaosmesh.devstats.cncf.io/',
+        artwork_url: 'https://github.com/cncf/artwork/blob/master/examples/sandbox.md#chaos-mesh-logos',
+        blog_url: 'https://chaos-mesh.org/blog/', slack_url: 'https://join.slack.com/t/cloud-native/shared_invite/zt-fyy3b8up-qHeDNVqbz1j8HDY6g1cY4w',
+        youtube_url: 'https://www.youtube.com/channel/UC4OwT4QTd0ML3YNnV1ybT6g', clomonitor_name: chaos-mesh}
+    - {item: null, name: Chaos Toolkit, homepage_url: 'https://chaostoolkit.org/',
+      repo_url: 'https://github.com/chaostoolkit/chaostoolkit', logo: chaos-toolkit.svg,
+      twitter: 'https://twitter.com/chaostoolkit', crunchbase: 'https://www.crunchbase.com/organization/chaosiq'}
+  - subcategory: null
+    name: Continuous Optimization
+    items:
+    - {item: null, name: BMC Helix, homepage_url: 'https://www.bmc.com/it-solutions/bmc-helix.html',
+      logo: bmc.svg, crunchbase: 'https://www.crunchbase.com/organization/bmc-software'}
+    - {item: null, name: cast.ai, homepage_url: 'https://cast.ai/', logo: cast.svg,
+      crunchbase: 'https://www.crunchbase.com/organization/cast-ai'}
+- category: null
+  name: Special
+  subcategories:
+  - subcategory: null
+    name: Kubernetes Certified Service Provider
+    items:
+    - item: null
+      name: 1Crew (KCSP)
+      description: |
+        We offer highly added value expertise in the digital transformations our customers undergo. Being Kubernetes experts, we help our customers get the best of the most wide-spread container orchestration platform, Kubernetes, and comply with the cloud agnostic requirements they have for their applications.
+      homepage_url: https://www.1crew.com/page/Kubernetes
+      logo: 1crew.svg
+      crunchbase: https://www.crunchbase.com/organization/1crew
+    - {item: null, name: 3-Shake (KCSP), homepage_url: 'https://3-shake.com/', logo: 3-shake-inc.svg,
+      crunchbase: 'https://www.crunchbase.com/organization/3-shake'}
+  - subcategory: null
+    name: Kubernetes Training Partner
+    items:
+    - item: null
+      name: acend (KTP)
+      description: acend offers the new Swiss way of training around cloud native
+        technologies provided by trainers with a plenty of real life experience.
+      homepage_url: https://acend.ch/en/trainings/
+      logo: acend.svg
+      crunchbase: https://www.crunchbase.com/organization/acend
+      extra: {training_certifications: ckad, training_type: 'e-learning, instructor-led'}
+    - {item: null, name: Acornsoft (KTP), description: 'As a CNCF KCSP (Kubernetes
+        Certified Service Provider) and a developer of Cocktail Cloud Kubernetes Orchestration
+        Platform Product, Acornsoft trains clients and prospective clients on Docker
+        and Kubernetes.', homepage_url: 'https://www.cocktailcloud.io/login.do', logo: acornsoft.svg,
+      crunchbase: 'https://www.crunchbase.com/organization/acornsoft'}
+  - subcategory: null
+    name: Certified CNFs
+    items:
+    - {item: null, name: 6WIND Virtual Service Router (VSR), description: '6WIND VSR
+        is a Virtual Service Router that leverages 6WIND''s core technology to deliver
+        network services solutions into virtual and cloud environments quickly, efficiently,
+        and cost-effectively. 6WIND VSR enables CSPs, Enterprises, and Cloud Providers
+        to benefit from our leading high-performance network services for building
+        efficient, flexible, and reliable networks.', homepage_url: 'https://www.6wind.com/',
+      logo: 6wind.svg, crunchbase: 'https://www.crunchbase.com/organization/6wind'}
+    - {item: null, name: BIG-IP NEXT Edge Firewall CNF, description: 'BIG-IP NEXT
+        Edge Firewall provides Firewall, DDoS and Intrusion Prevention capabilities
+        and is part of F5''s Consolidated suite of CNFs.', homepage_url: 'https://f5.com',
+      logo: f5.svg, twitter: 'https://twitter.com/F5', crunchbase: 'https://www.crunchbase.com/organization/f5-networks'}
+- category: null
+  name: CNCF Members
+  subcategories:
+  - subcategory: null
+    name: Platinum
+    items:
+    - {item: null, name: Alibaba Cloud (member), homepage_url: 'https://us.alibabacloud.com/',
+      logo: alibaba-cloud-member.svg, crunchbase: 'https://www.crunchbase.com/organization/alibaba-cloud',
+      joined: '2017-05-01'}
+    - {item: null, name: Amazon Web Services (member), homepage_url: 'https://aws.amazon.com/',
+      logo: amazon-web-services.svg, crunchbase: 'https://www.crunchbase.com/organization/amazon-web-services',
+      joined: '2017-08-01'}
+  - subcategory: null
+    name: Gold
+    items:
+    - {item: null, name: American Express (member), homepage_url: 'https://www.americanexpress.com/',
+      logo: american-express.svg, enduser: true, crunchbase: 'https://www.crunchbase.com/organization/americanexpress',
+      joined: '2021-06-01'}
+    - {item: null, name: Ant Financial (member), homepage_url: 'https://www.antgroup.com',
+      logo: ant-financial-member.svg, enduser: true, crunchbase: 'https://www.crunchbase.com/organization/ant-financial',
+      joined: '2019-05-01'}
+  - subcategory: null
+    name: Silver
+    items:
+    - {item: null, name: 1Crew (member), homepage_url: 'https://www.1crew.com/', logo: 1crew.svg,
+      crunchbase: 'https://www.crunchbase.com/organization/1crew', joined: '2022-10-01'}
+    - {item: null, name: 1NCE (member), homepage_url: 'https://1nce.com/en-us', logo: 1nce.svg,
+      crunchbase: 'https://www.crunchbase.com/organization/1nce-gmbh', joined: '2020-02-01'}
+  - subcategory: null
+    name: Academic
+    items:
+    - {item: null, name: Golden Gate University (member), homepage_url: 'https://www.ggu.edu',
+      logo: golden-gate-university-member.svg, enduser: true, crunchbase: 'https://www.crunchbase.com/organization/golden-gate-university-san-francisco',
+      joined: '2018-07-01'}
+    - {item: null, name: Strategic Education (member), homepage_url: 'https://www.strategiceducation.com/home/default.aspx',
+      logo: strategic-education.svg, enduser: true, crunchbase: 'https://www.crunchbase.com/organization/strategic-education-inc',
+      joined: '2020-08-01'}
+  - subcategory: null
+    name: Nonprofit
+    items:
+    - {item: null, name: ARDC (member), homepage_url: 'https://www.ardc.edu.au/',
+      logo: ardc.svg, crunchbase: 'https://www.crunchbase.com/organization/australian-research-data-commons-ardc',
+      joined: '2023-05-01'}
+    - {item: null, name: CableLabs (member), homepage_url: 'https://www.cablelabs.com/',
+      logo: cablelabs-snaps-k8s.svg, crunchbase: 'https://www.crunchbase.com/organization/cablelabs',
+      joined: '2018-09-01'}
+  - subcategory: null
+    name: End User Supporter
+    items:
+    - {item: null, name: 4intelligence (supporter), homepage_url: 'https://4intelligence.ai/',
+      logo: 4intelligence.svg, crunchbase: 'https://www.crunchbase.com/organization/4intelligence',
+      joined: '2021-10-01'}
+    - {item: null, name: Adidas (supporter), homepage_url: 'https://www.adidas.com/us',
+      logo: adidas-supporter.svg, crunchbase: 'https://www.crunchbase.com/organization/adidas',
+      joined: '2018-07-01'}
+- category: null
+  name: Wasm
+  subcategories:
+  - subcategory: null
+    name: Languages
+    items:
+    - {item: null, name: .NET, description: Managed language, homepage_url: 'https://dot.net/',
+      repo_url: 'https://github.com/dotnet/runtime', logo: dotnet.svg, crunchbase: 'https://www.crunchbase.com/organization/microsoft'}
+    - {item: null, name: C, description: Compiled language to Wasm, homepage_url: 'https://www.open-std.org/jtc1/sc22/wg14/',
+      logo: c.svg, unnamed_organization: true}
+  - subcategory: null
+    name: Runtimes
+    items:
+    - item: null
+      name: Krustlet (Wasm)
+      homepage_url: https://krustlet.dev
+      project: sandbox
+      repo_url: https://github.com/krustlet/krustlet
+      logo: krustlet.svg
+      twitter: https://twitter.com/krustlet
+      crunchbase: https://www.crunchbase.com/organization/cloud-native-computing-foundation
+      allow_duplicate_repo: true
+      extra: {accepted: '2021-07-13', clomonitor_name: krustlet}
+    - {item: null, name: Lunatic, homepage_url: 'https://lunatic.solutions/', repo_url: 'https://github.com/lunatic-solutions/lunatic',
+      logo: lunatic.svg, unnamed_organization: true}
+  - subcategory: null
+    name: Application Frameworks
+    items:
+    - {item: null, name: Ambient, homepage_url: 'https://www.ambient.run/', repo_url: 'https://github.com/AmbientRun/Ambient',
+      logo: ambient.svg, crunchbase: 'https://www.crunchbase.com/organization/ambient-ecfc'}
+    - {item: null, name: Dapr SDK, homepage_url: 'https://github.com/second-state/dapr-sdk-wasmedge',
+      repo_url: 'https://github.com/second-state/dapr-sdk-wasmedge', logo: dapr-for-wasmedge.svg,
+      crunchbase: 'https://www.crunchbase.com/organization/second-state'}
+  - subcategory: null
+    name: Edge/Bare metal
+    items:
+    - {item: null, name: Flatcar Container Linux, homepage_url: 'https://www.flatcar.org/',
+      repo_url: 'https://github.com/flatcar/Flatcar', logo: flatcar.svg, unnamed_organization: true}
+    - {item: null, name: Genode, homepage_url: 'https://genode.org/', repo_url: 'https://github.com/genodelabs/genode',
+      logo: wasm.svg, crunchbase: 'https://www.crunchbase.com/organization/genode-labs'}
+  - subcategory: null
+    name: AI/Machine Learning
+    items:
+    - {item: null, name: Apache TVM, homepage_url: 'https://tvm.apache.org/', repo_url: 'https://github.com/apache/tvm',
+      logo: wasm.svg, crunchbase: 'https://www.crunchbase.com/organization/apache'}
+    - {item: null, name: FFmpeg, homepage_url: 'https://ffmpeg.org/', repo_url: 'https://github.com/FFmpeg/FFmpeg',
+      logo: ffmpeg.svg, unnamed_organization: true}
+  - subcategory: null
+    name: Embedded Functions
+    items:
+    - {item: null, name: Dapr (Wasm), homepage_url: 'https://dapr.io', repo_url: 'https://github.com/dapr/dapr',
+      logo: dapr.svg, crunchbase: 'https://www.crunchbase.com/organization/cloud-native-computing-foundation',
+      allow_duplicate_repo: true}
+    - {item: null, name: eKuiper, homepage_url: 'https://ekuiper.org', repo_url: 'https://github.com/lf-edge/ekuiper',
+      logo: wasm.svg, crunchbase: 'https://www.crunchbase.com/organization/linux-foundation-edge'}
+  - subcategory: null
+    name: Tooling
+    items:
+    - {item: null, name: Asyncify, homepage_url: 'https://github.com/GoogleChromeLabs/asyncify',
+      repo_url: 'https://github.com/GoogleChromeLabs/asyncify', logo: wasm.svg, crunchbase: 'https://www.crunchbase.com/organization/google'}
+    - {item: null, name: Binaryen, homepage_url: 'https://github.com/WebAssembly/binaryen',
+      repo_url: 'https://github.com/WebAssembly/binaryen', logo: wasm.svg, crunchbase: 'https://www.crunchbase.com/organization/webassembly'}
+  - subcategory: null
+    name: Orchestration & Management
+    items:
+    - {item: null, name: container2wasm, homepage_url: 'https://ktock.github.io/container2wasm-demo/',
+      repo_url: 'https://github.com/ktock/container2wasm', logo: wasm.svg, unnamed_organization: true}
+    - {item: null, name: containerd (Wasm), homepage_url: 'https://containerd.io/',
+      repo_url: 'https://github.com/containerd/containerd', logo: containerd.svg,
+      crunchbase: 'https://www.crunchbase.com/organization/cloud-native-computing-foundation',
+      allow_duplicate_repo: true}
+  - subcategory: null
+    name: Hosted Platforms
+    items:
+    - {item: null, name: Azure Kubernetes Service (AKS) (Wasm), homepage_url: 'https://learn.microsoft.com/en-us/azure/aks/use-wasi-node-pools',
+      logo: azure-kubernetes-service.svg, crunchbase: 'https://www.crunchbase.com/organization/microsoft'}
+    - {item: null, name: Cloudflare Workers (Wasm), homepage_url: 'https://workers.cloudflare.com/',
+      logo: cloudflare-workers.svg, crunchbase: 'https://www.crunchbase.com/organization/cloudflare'}
+  - subcategory: null
+    name: Decentralized Platforms
+    items:
+    - {item: null, name: Casper, homepage_url: 'https://casper.network/', repo_url: 'https://github.com/casper-network/casper-node',
+      logo: casper.svg, crunchbase: 'https://www.crunchbase.com/organization/casper-association'}
+    - {item: null, name: CosmWasm, homepage_url: 'https://cosmwasm.com/', repo_url: 'https://github.com/CosmWasm/cosmwasm',
+      logo: cosmwasm.svg, crunchbase: 'https://www.crunchbase.com/organization/cosmwasm'}
+  - subcategory: null
+    name: Debugging & Observability
+    items:
+    - {item: null, name: Modsurfer, homepage_url: 'https://dev.dylib.so/docs/modsurfer/',
+      repo_url: 'https://github.com/dylibso/modsurfer', logo: modsurfer.svg, crunchbase: 'https://www.crunchbase.com/organization/dylibso'}
+    - {item: null, name: Observe SDK, homepage_url: 'https://dev.dylib.so/docs/observe/overview',
+      repo_url: 'https://github.com/dylibso/observe-sdk', logo: observe.svg, crunchbase: 'https://www.crunchbase.com/organization/dylibso'}
+  - subcategory: null
+    name: Packaging, Registries & Application Delivery
+    items:
+    - {item: null, name: crates.io, homepage_url: 'https://crates.io/', repo_url: 'https://github.com/rust-lang/crates.io',
+      logo: crates.svg, crunchbase: 'https://www.crunchbase.com/organization/rust'}
+    - {item: null, name: Docker Hub, homepage_url: 'https://hub.docker.com/', logo: docker-member.svg,
+      crunchbase: 'https://www.crunchbase.com/organization/docker'}
